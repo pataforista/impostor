@@ -174,21 +174,33 @@ export class ImpostorWordEngine {
     players: Player[];
     secretWord?: { word: string; category?: string; forbidden?: string[] };
     wordBank?: Array<{ word: string; category?: string; forbidden?: string[] }>;
+    categories?: string[];
+    impostorCount?: number;
   }) {
     const { players } = params;
     if (players.length < 3) throw new Error("Need at least 3 players");
-    if (this.cfg.impostorCount >= players.length) throw new Error("impostorCount must be < players.length");
+    const impostorCount = params.impostorCount ?? this.cfg.impostorCount;
+    if (impostorCount < 1) throw new Error("impostorCount must be >= 1");
+    if (impostorCount >= players.length) throw new Error("impostorCount must be < players.length");
+
+    let wordBank = params.wordBank ?? [];
+    if (params.categories?.length) {
+      const categorySet = new Set(params.categories.map(category => this.normalizeCategory(category)));
+      wordBank = wordBank.filter(card =>
+        card.category ? categorySet.has(this.normalizeCategory(card.category)) : false,
+      );
+    }
 
     const secret =
       params.secretWord ??
-      (params.wordBank?.length ? sampleOne(params.wordBank, this.rng) : null);
+      (wordBank.length ? sampleOne(wordBank, this.rng) : null);
 
     if (!secret) throw new Error("Provide secretWord or non-empty wordBank");
 
     // Assign roles
     const ids = players.map(p => p.id);
     const shuffled = shuffle(ids, this.rng);
-    const impostorIds = new Set(shuffled.slice(0, this.cfg.impostorCount));
+    const impostorIds = new Set(shuffled.slice(0, impostorCount));
 
     // Normalize forbidden words
     const forbidden = (secret.forbidden ?? []).map(w => this.normalizeClue(w));
@@ -527,6 +539,10 @@ export class ImpostorWordEngine {
       .replace(/[\u0300-\u036f]/g, "");
     if (this.cfg.normalizeClues === "lower") return t.toLowerCase();
     return t;
+  }
+
+  private normalizeCategory(category: string) {
+    return category.trim().toLowerCase();
   }
 
   private validateClue(raw: string, normalized: string): string | null {

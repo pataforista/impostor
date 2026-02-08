@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPOSTOR | Psychiatry Edition</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Settings Bar -->
+        <div class="settings-bar">
+            <button id="toggle-sound" class="icon-btn" title="Sonido">🔊</button>
+            <select id="theme-selector" class="icon-btn" style="width: auto; border-radius: 20px; padding: 0 10px;"
+                title="Tema">
+                <option value="default">✨ Default</option>
+                <option value="plumber">🍄 Plumber</option>
+                <option value="hero">🛡️ Hero</option>
+                <option value="speed">🌀 Speed</option>
+            </select>
+        </div>
+
+        <!-- Main Background Overlay -->
+        <div class="bg-overlay"></div>
+
+        <header>
+            <h1>IMPOSTOR</h1>
+            <div id="shift-status" class="shift-badge hidden">GUADIA: ACTIVA 🏥</div>
+            <p class="subtitle">PSYCHIATRY EDITION</p>
+        </header>
+
+        <!-- Intro / Guide Screen -->
+        <section id="intro-screen" class="screen active">
+            <div class="glass-container text-center">
+                <h2>¿Cómo jugar?</h2>
+                <div class="guide-steps">
+                    <div class="step-card">
+                        <span class="step-num">1</span>
+                        <div class="step-text">
+                            <h4>Preparación</h4>
+                            <p>Configura los jugadores y elige las categorías de diagnóstico.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">2</span>
+                        <div class="step-text">
+                            <h4>Reparto Secreto</h4>
+                            <p>Pasen el móvil. Todos verán una palabra excepto el Impostor.</p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">3</span>
+                        <div class="step-text">
+                            <h4>Debate Verbal</h4>
+                            <p>Hablen y den pistas sutiles para descubrir al infiltrado.</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="go-to-setup-btn" class="primary-btn">Entendido, ¡A Jugar!</button>
+            </div>
+        </section>
+
+        <!-- Setup Screen -->
+        <section id="setup-screen" class="screen">
+            <div class="glass-container">
+                <div class="setup-form">
+                    <div class="input-group">
+                        <label for="player-names">Nombres de Jugadores (sep. por coma)</label>
+                        <input type="text" id="player-names" placeholder="Ana, Luis, Carlos..."
+                            value="Ana, Luis, Carlos, Marta">
+                    </div>
+
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="impostor-count">Impostores</label>
+                            <input type="number" id="impostor-count" value="1" min="1">
+                        </div>
+                        <div class="input-group">
+                            <label for="difficulty">Dificultad (1-3)</label>
+                            <input type="number" id="difficulty" value="1" min="1" max="3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label>Categorías</label>
+                            <div class="pill-controls">
+                                <button id="select-all-cats" class="text-btn">Todas</button>
+                                <button id="select-none-cats" class="text-btn">Ninguna</button>
+                            </div>
+                        </div>
+                        <div id="category-pills" class="pills-container">
+                            <!-- Will be populated by JS -->
+                        </div>
+                    </div>
+
+                    <button id="start-game-btn" class="primary-btn">Comenzar Partida</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distribution Screen (Pass the Phone) -->
+        <section id="distribution-screen" class="screen">
+            <div class="glass-container text-center">
+                <div id="distribution-prompt">
+                    <p class="subtitle">ENTREGA EL TELÉFONO A:</p>
+                    <h1 id="target-player-name">---</h1>
+                    <button id="ready-to-see-btn" class="primary-btn">Estoy Listo</button>
+                </div>
+
+                <div id="reveal-card-area" class="hidden">
+                    <div class="pc-card-wrapper" id="holo-card-wrapper">
+                        <div class="pc-behind"></div>
+                        <div class="pc-card">
+                            <div class="pc-card-front">
+                                <div class="pc-inside">
+                                    <div class="pc-details" id="card-content">
+                                        <!-- Card content -->
+                                    </div>
+                                </div>
+                                <div class="pc-shine"></div>
+                                <div class="pc-glare"></div>
+                            </div>
+                            <div class="pc-card-back">
+                                <p>IMPOSTOR</p>
+                                <p class="subtitle">PSYCHIATRY ED.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="confirm-seen-btn" class="primary-btn" style="margin-top: 2rem">Lo he visto
+                        (Pasar)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Screen (Verbal Play) -->
+        <section id="game-screen" class="screen">
+            <div id="category-bg" class="category-banner"></div>
+
+            <div class="game-container text-center">
+                <div class="status-bar">
+                    <div class="phase-tag">DIAGNÓSTICO EN CURSO</div>
+                </div>
+
+                <div class="active-status glass-container">
+                    <p class="subtitle">CATEGORÍA ACTUAL</p>
+                    <h2 id="game-category-name">---</h2>
+                    <div class="divider"></div>
+                    <p class="hint">Debatan en voz alta. ¿Quién parece no conocer la patología?</p>
+                    <button id="reveal-all-btn" class="primary-btn">REVELAR IMPOSTOR</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Screen -->
+        <section id="end-screen" class="screen">
+            <div class="glass-container text-center">
+                <p id="end-result-label" class="subtitle">FIN DE LA PARTIDA</p>
+                <h1 id="winner-display">---</h1>
+                <div class="result-details">
+                    <p>La palabra secreta era:</p>
+                    <h2 id="secret-word-display">---</h2>
+                </div>
+                <button onclick="location.reload()" class="primary-btn">Nueva Partida</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Load Engine as a script -->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
