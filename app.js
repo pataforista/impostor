@@ -49,17 +49,82 @@ function normalizeForFilename(str) {
     return str.toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
-        .replace(/\s+/g, "_")
-        .replace(/[^\w]/g, "");
+        .replace(/[^\w]+/g, "_")
+        .replace(/_+/g, "_")
+        .replace(/^_+|_+$/g, "");
+}
+
+function getCategoryImagePath(category) {
+    const filename = normalizeForFilename(category);
+    return `assets/categories/${filename}.jpg`;
 }
 
 function updateBackground(category) {
     const bgOverlay = document.querySelector('.bg-overlay');
     if (!bgOverlay) return;
     const filename = normalizeForFilename(category);
-    bgOverlay.style.backgroundImage = `url('assets/categories/${filename}.jpg')`;
-    bgOverlay.style.opacity = '0.3';
+    const img = new Image();
+    const path = `assets/categories/${filename}.jpg`;
+    img.onload = () => {
+        bgOverlay.style.backgroundImage = `url('${path}')`;
+        bgOverlay.style.opacity = '0.3';
+    };
+    img.onerror = () => {
+        bgOverlay.style.backgroundImage = 'none';
+        bgOverlay.style.opacity = '0';
+    };
+    img.src = path;
 }
+
+function clearBackground() {
+    const bgOverlay = document.querySelector('.bg-overlay');
+    if (!bgOverlay) return;
+    bgOverlay.style.opacity = '0';
+}
+
+function applyCategoryPreview(pill, category) {
+    const imagePath = getCategoryImagePath(category);
+    const img = new Image();
+    img.onload = () => {
+        pill.style.setProperty('--pill-image', `url('${imagePath}')`);
+        pill.classList.add('has-image');
+    };
+    img.onerror = () => {
+        pill.classList.add('no-image');
+    };
+    img.src = imagePath;
+}
+
+// Numeric Stepper Logic
+document.querySelectorAll('.step-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetId = btn.dataset.target;
+        const input = document.getElementById(targetId);
+        if (!input) return;
+
+        let val = parseInt(input.value) || 0;
+        if (btn.classList.contains('plus')) {
+            val++;
+        } else {
+            val--;
+        }
+
+        // Bounds check
+        const min = parseInt(input.min);
+        const max = parseInt(input.max);
+        if (!isNaN(min) && val < min) val = min;
+        if (!isNaN(max) && val > max) val = max;
+
+        input.value = val;
+        triggerHaptic('light');
+        audio.play('click');
+
+        // Trigger background update if difficulty changes (optional, but consistent)
+        if (targetId === 'difficulty') {
+            // Optional: visual feedback for difficulty
+        }
+    });
+});
 
 // 1. Load Dataset & Populate Categories
 async function init() {
@@ -73,10 +138,15 @@ async function init() {
         categories.forEach(cat => {
             const pill = document.createElement('div');
             pill.className = 'category-pill active'; // Pre-selected
-            pill.textContent = cat;
+            const label = document.createElement('span');
+            label.className = 'pill-label';
+            label.textContent = cat;
+            pill.appendChild(label);
             pill.dataset.category = cat;
             pill.addEventListener('click', () => {
                 pill.classList.toggle('active');
+                triggerHaptic('light');
+                audio.play('click');
                 if (pill.classList.contains('active')) {
                     updateBackground(cat);
                 }
@@ -84,6 +154,7 @@ async function init() {
             pill.addEventListener('mouseenter', () => {
                 updateBackground(cat);
             });
+            applyCategoryPreview(pill, cat);
             categoryPillsContainer.appendChild(pill);
         });
     } catch (e) {
@@ -165,24 +236,32 @@ function showDistributionPrompt() {
     targetPlayerName.textContent = player.name;
     distributionPrompt.classList.remove('hidden');
     revealCardArea.classList.add('hidden');
-
-    // Immersion: Show category art during handover
-    if (state.secret && state.secret.category) {
-        updateBackground(state.secret.category);
-    }
+    clearBackground();
 }
 
 readyToSeeBtn.addEventListener('click', () => {
     triggerHaptic('medium');
     audio.play('flip');
+    clearBackground();
     const state = engine.getState();
     const player = state.players[distributionIndex];
     const card = engine.getPrivateCard(player.id);
 
     if (card.kind === "impostor") {
-        cardContent.innerHTML = `<p>Tu rol:</p> <h3>IMPOSTOR</h3>`;
+        cardContent.innerHTML = `
+            <p class="card-label">Identidad Clínica</p>
+            <h3 class="card-role impostor-text">IMPOSTOR</h3>
+            <p class="card-note">Infíltrate en el debate. Mimetiza su lógica.</p>
+        `;
     } else {
-        cardContent.innerHTML = `<p>Categoría: ${card.category}</p> <h3>${card.word}</h3>`;
+        cardContent.innerHTML = `
+            <p class="card-label">Identidad Clínica</p>
+            <h3 class="card-role">ESPECIALISTA</h3>
+            <p class="card-label">Área de Consulta</p>
+            <h3 class="card-role" style="font-size: 1.2rem; opacity: 0.8;">${card.category}</h3>
+            <p class="card-label">Caso a Debatir</p>
+            <h3 class="card-word">${card.word}</h3>
+        `;
     }
 
     distributionPrompt.classList.add('hidden');
@@ -209,8 +288,7 @@ function showGameScreen() {
     gameCategoryName.textContent = state.secret.category || "General";
 
     // Privacy: Neutral background during debate
-    const bgOverlay = document.querySelector('.bg-overlay');
-    if (bgOverlay) bgOverlay.style.opacity = '0';
+    clearBackground();
     if (categoryBanner) categoryBanner.style.backgroundImage = 'none';
 
     switchScreen('game');

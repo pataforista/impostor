@@ -251,8 +251,7 @@ header h1 {
     opacity: 0.8;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
     width: 100%;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
@@ -261,6 +260,120 @@ input[type="number"] {
     color: white;
     font-size: 1rem;
     font-family: var(--font-main);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--glass-glow);
+    outline: none;
+}
+
+/* Numeric Stepper Premium */
+.stepper-input {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    padding: 0.3rem;
+    width: fit-content;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.stepper-input input[type="number"] {
+    width: 50px;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+.stepper-input input[type="number"]::-webkit-outer-spin-button,
+.stepper-input input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.step-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-variant));
+    color: var(--on-primary);
+    font-size: 1.4rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.step-btn:active {
+    transform: scale(0.85);
+    filter: brightness(1.2);
+}
+
+/* Utility Layout */
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Premium Utility Buttons */
+.pill-utility-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pill-utility-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.pill-utility-btn.all {
+    border-color: rgba(46, 204, 64, 0.4);
+}
+
+.pill-utility-btn.all:active {
+    background: rgba(46, 204, 64, 0.2);
+    box-shadow: 0 0 15px rgba(46, 204, 64, 0.3);
+}
+
+.pill-utility-btn.none {
+    border-color: rgba(255, 65, 54, 0.4);
+}
+
+.pill-utility-btn.none:active {
+    background: rgba(255, 65, 54, 0.2);
+    box-shadow: 0 0 15px rgba(255, 65, 54, 0.3);
 }
 
 .pills-container {
@@ -280,6 +393,16 @@ input[type="number"] {
     cursor: pointer;
     transition: all 0.2s;
     user-select: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding-left: 2.4rem;
+}
+
+.category-pill:active {
+    transform: scale(0.95);
 }
 
 .category-pill.active {
@@ -287,6 +410,69 @@ input[type="number"] {
     color: var(--on-primary);
     border-color: transparent;
     box-shadow: 0 4px 10px var(--glass-glow);
+}
+
+.category-pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--pill-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.category-pill::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.category-pill.has-image::before,
+.category-pill.has-image::after {
+    opacity: 1;
+}
+
+.category-pill .pill-label {
+    position: relative;
+    z-index: 1;
+}
+
+.category-pill .pill-label::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    position: absolute;
+    left: -2.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(6px);
+    background-image: var(--pill-image);
+    background-size: cover;
+    background-position: center;
+}
+
+.category-pill.no-image .pill-label::before {
+    background-color: var(--primary);
+    background-image: none;
+    opacity: 0.5;
+}
+
+.category-pill.no-image::after {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.category-pill.active .pill-label::before {
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Card Visuals */
@@ -319,7 +505,9 @@ input[type="number"] {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.1s ease;
-    border: 4px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%);
 }
 
 .pc-card-back {
@@ -333,13 +521,88 @@ input[type="number"] {
     backface-visibility: hidden;
     position: absolute;
     inset: 0;
+    gap: 1rem;
+}
+
+.card-logo {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 15px var(--primary));
+}
+
+.card-back-label {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.impostor-text {
+    color: #ff4136 !important;
+    text-shadow: 0 0 20px rgba(255, 65, 54, 0.5);
 }
 
 .pc-card-front {
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(135deg, rgba(17, 10, 34, 0.98), rgba(4, 2, 10, 0.98));
     position: absolute;
     inset: 0;
     backface-visibility: hidden;
+}
+
+.pc-inside {
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-inside::before {
+    content: "";
+    position: absolute;
+    inset: 1.4rem;
+    border-radius: calc(var(--card-radius) - 10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+.pc-details {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.pc-details h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.pc-details .card-label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.pc-details .card-role {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.pc-details .card-word {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.pc-details .card-note {
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 .category-banner {

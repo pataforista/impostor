@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -79,20 +80,30 @@
                     <div class="input-grid">
                         <div class="input-group">
                             <label for="impostor-count">Impostores</label>
-                            <input type="number" id="impostor-count" value="1" min="1">
+                            <div class="stepper-input">
+                                <button type="button" class="step-btn minus" data-target="impostor-count">−</button>
+                                <input type="number" id="impostor-count" value="1" min="1" inputmode="numeric"
+                                    pattern="[0-9]*">
+                                <button type="button" class="step-btn plus" data-target="impostor-count">+</button>
+                            </div>
                         </div>
                         <div class="input-group">
                             <label for="difficulty">Dificultad (1-3)</label>
-                            <input type="number" id="difficulty" value="1" min="1" max="3">
+                            <div class="stepper-input">
+                                <button type="button" class="step-btn minus" data-target="difficulty">−</button>
+                                <input type="number" id="difficulty" value="1" min="1" max="3" inputmode="numeric"
+                                    pattern="[0-9]*">
+                                <button type="button" class="step-btn plus" data-target="difficulty">+</button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="input-group">
                         <div class="label-row">
-                            <label>Categorías</label>
+                            <label>Categorías de Diagnóstico</label>
                             <div class="pill-controls">
-                                <button id="select-all-cats" class="text-btn">Todas</button>
-                                <button id="select-none-cats" class="text-btn">Ninguna</button>
+                                <button id="select-all-cats" class="pill-utility-btn all">Todas</button>
+                                <button id="select-none-cats" class="pill-utility-btn none">Ninguna</button>
                             </div>
                         </div>
                         <div id="category-pills" class="pills-container">
