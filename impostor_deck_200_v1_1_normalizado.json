@@ -1,0 +1,7551 @@
+{
+  "meta": {
+    "name": "Impostor Deck (200) — DSM-5-TR (alto nivel) + términos clínicos",
+    "version": "v1.1",
+    "language": "es",
+    "n_cards": 200,
+    "fields": [
+      "id",
+      "categoria",
+      "subcategoria",
+      "palabra_secreta",
+      "cercanos_facil",
+      "cercanos_medio",
+      "cercanos_dificil",
+      "prohibidas",
+      "dificultad",
+      "peso_categoria",
+      "tags"
+    ],
+    "notes": "Dataset pedagógico para juego. No incluye criterios diagnósticos completos. Incluye diagnósticos DSM-5-TR a nivel de lista/índice y términos clínicos complementarios. Normalizado con niveles de pistas y lista de palabras prohibidas para evitar spoilers."
+  },
+  "cards": [
+    {
+      "id": "IMP_001",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno del desarrollo intelectual",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "discapacidad intelectual",
+        "adaptación"
+      ],
+      "cercanos_medio": [
+        "discapacidad intelectual",
+        "adaptación",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "discapacidad intelectual",
+        "adaptación",
+        "CI",
+        "funcionamiento"
+      ],
+      "prohibidas": [
+        "Trastorno del desarrollo intelectual",
+        "trastorno",
+        "desarrollo",
+        "intelectual",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_002",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Retraso global del desarrollo",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "evaluación",
+        "neurodesarrollo"
+      ],
+      "cercanos_medio": [
+        "evaluación",
+        "neurodesarrollo",
+        "hitos"
+      ],
+      "cercanos_dificil": [
+        "menores de 5 años",
+        "hitos",
+        "evaluación",
+        "neurodesarrollo"
+      ],
+      "prohibidas": [
+        "Retraso global del desarrollo",
+        "retraso",
+        "global",
+        "desarrollo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_003",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno del lenguaje",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "vocabulario",
+        "gramática"
+      ],
+      "cercanos_medio": [
+        "vocabulario",
+        "gramática",
+        "desarrollo"
+      ],
+      "cercanos_dificil": [
+        "vocabulario",
+        "gramática",
+        "desarrollo",
+        "escolar"
+      ],
+      "prohibidas": [
+        "Trastorno del lenguaje",
+        "trastorno",
+        "lenguaje",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_004",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno fonológico",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "articulación",
+        "inteligibilidad"
+      ],
+      "cercanos_medio": [
+        "articulación",
+        "inteligibilidad",
+        "fonemas"
+      ],
+      "cercanos_dificil": [
+        "articulación",
+        "inteligibilidad",
+        "fonemas",
+        "terapia del habla"
+      ],
+      "prohibidas": [
+        "Trastorno fonológico",
+        "trastorno",
+        "fonologico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_005",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Tartamudeo",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fluidez",
+        "bloqueos"
+      ],
+      "cercanos_medio": [
+        "fluidez",
+        "bloqueos",
+        "ansiedad social"
+      ],
+      "cercanos_dificil": [
+        "fluidez",
+        "bloqueos",
+        "ansiedad social",
+        "inicio infantil"
+      ],
+      "prohibidas": [
+        "Tartamudeo",
+        "tartamudeo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_006",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de la comunicación social (pragmático)",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "pragmática",
+        "turnos conversacionales"
+      ],
+      "cercanos_medio": [
+        "pragmática",
+        "turnos conversacionales",
+        "TEA ddx"
+      ],
+      "cercanos_dificil": [
+        "pragmática",
+        "turnos conversacionales",
+        "TEA ddx",
+        "contexto social"
+      ],
+      "prohibidas": [
+        "Trastorno de la comunicación social (pragmático)",
+        "trastorno",
+        "comunicacion",
+        "social",
+        "pragmatico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_007",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno del espectro autista",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "comunicación social",
+        "rigidez"
+      ],
+      "cercanos_medio": [
+        "comunicación social",
+        "rigidez",
+        "sensorial"
+      ],
+      "cercanos_dificil": [
+        "comunicación social",
+        "rigidez",
+        "sensorial",
+        "intereses restringidos"
+      ],
+      "prohibidas": [
+        "Trastorno del espectro autista",
+        "trastorno",
+        "espectro",
+        "autista",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_008",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "TDAH",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "inatención",
+        "impulsividad"
+      ],
+      "cercanos_medio": [
+        "inatención",
+        "impulsividad",
+        "función ejecutiva"
+      ],
+      "cercanos_dificil": [
+        "inatención",
+        "impulsividad",
+        "función ejecutiva",
+        "metilfenidato"
+      ],
+      "prohibidas": [
+        "TDAH",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_009",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno específico del aprendizaje",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "dislexia",
+        "discalculia"
+      ],
+      "cercanos_medio": [
+        "dislexia",
+        "discalculia",
+        "rendimiento"
+      ],
+      "cercanos_dificil": [
+        "dislexia",
+        "discalculia",
+        "rendimiento",
+        "intervención escolar"
+      ],
+      "prohibidas": [
+        "Trastorno específico del aprendizaje",
+        "trastorno",
+        "especifico",
+        "aprendizaje",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_010",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno del desarrollo de la coordinación",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "torpeza",
+        "motricidad fina"
+      ],
+      "cercanos_medio": [
+        "torpeza",
+        "motricidad fina",
+        "dispraxia"
+      ],
+      "cercanos_dificil": [
+        "torpeza",
+        "motricidad fina",
+        "dispraxia",
+        "ocupacional"
+      ],
+      "prohibidas": [
+        "Trastorno del desarrollo de la coordinación",
+        "trastorno",
+        "desarrollo",
+        "coordinacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_011",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de movimientos estereotipados",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "autoestimulación",
+        "neurodesarrollo"
+      ],
+      "cercanos_medio": [
+        "autoestimulación",
+        "neurodesarrollo",
+        "comorbilidad"
+      ],
+      "cercanos_dificil": [
+        "aleteo",
+        "autoestimulación",
+        "neurodesarrollo",
+        "comorbilidad"
+      ],
+      "prohibidas": [
+        "Trastorno de movimientos estereotipados",
+        "trastorno",
+        "movimientos",
+        "estereotipados",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_012",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de Tourette",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "vocales",
+        "comorbilidad"
+      ],
+      "cercanos_medio": [
+        "vocales",
+        "comorbilidad",
+        "tics"
+      ],
+      "cercanos_dificil": [
+        "tics",
+        "vocales",
+        "curso",
+        "comorbilidad"
+      ],
+      "prohibidas": [
+        "Trastorno de Tourette",
+        "trastorno",
+        "tourette",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_013",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de tics motor o vocal persistente",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "crónico",
+        "Tourette ddx"
+      ],
+      "cercanos_medio": [
+        "crónico",
+        "Tourette ddx",
+        "inicio infantil"
+      ],
+      "cercanos_dificil": [
+        "crónico",
+        "tics",
+        "Tourette ddx",
+        "inicio infantil"
+      ],
+      "prohibidas": [
+        "Trastorno de tics motor o vocal persistente",
+        "trastorno",
+        "motor",
+        "vocal",
+        "persistente",
+        "tics",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_014",
+      "categoria": "Neurodesarrollo",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de tics provisional",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "transitorio",
+        "infancia"
+      ],
+      "cercanos_medio": [
+        "transitorio",
+        "infancia",
+        "tics"
+      ],
+      "cercanos_dificil": [
+        "transitorio",
+        "tics",
+        "estrés",
+        "infancia"
+      ],
+      "prohibidas": [
+        "Trastorno de tics provisional",
+        "trastorno",
+        "provisional",
+        "tics",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_015",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno esquizotípico (de la personalidad)",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "ideas de referencia",
+        "excentricidad"
+      ],
+      "cercanos_medio": [
+        "ideas de referencia",
+        "excentricidad",
+        "afecto restringido"
+      ],
+      "cercanos_dificil": [
+        "ideas de referencia",
+        "excentricidad",
+        "afecto restringido",
+        "rasgos"
+      ],
+      "prohibidas": [
+        "Trastorno esquizotípico (de la personalidad)",
+        "trastorno",
+        "esquizotipico",
+        "personalidad",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_016",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno delirante",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "convicción",
+        "sistematizado"
+      ],
+      "cercanos_medio": [
+        "convicción",
+        "sistematizado",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "convicción",
+        "sistematizado",
+        "funcionamiento",
+        "celotípico"
+      ],
+      "prohibidas": [
+        "Trastorno delirante",
+        "trastorno",
+        "delirante",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_017",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno psicótico breve",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "inicio agudo",
+        "remisión"
+      ],
+      "cercanos_medio": [
+        "inicio agudo",
+        "remisión",
+        "duración"
+      ],
+      "cercanos_dificil": [
+        "inicio agudo",
+        "estrés",
+        "remisión",
+        "duración"
+      ],
+      "prohibidas": [
+        "Trastorno psicótico breve",
+        "trastorno",
+        "psicotico",
+        "breve",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_018",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno esquizofreniforme",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "primer episodio",
+        "psicosis"
+      ],
+      "cercanos_medio": [
+        "primer episodio",
+        "psicosis",
+        "evolución"
+      ],
+      "cercanos_dificil": [
+        "duración 1-6 meses",
+        "primer episodio",
+        "psicosis",
+        "evolución"
+      ],
+      "prohibidas": [
+        "Trastorno esquizofreniforme",
+        "trastorno",
+        "esquizofreniforme",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_019",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Esquizofrenia",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "delirios",
+        "alucinaciones"
+      ],
+      "cercanos_medio": [
+        "delirios",
+        "alucinaciones",
+        "desorganización"
+      ],
+      "cercanos_dificil": [
+        "delirios",
+        "alucinaciones",
+        "desorganización",
+        "síntomas negativos"
+      ],
+      "prohibidas": [
+        "Esquizofrenia",
+        "esquizofrenia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_020",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno esquizoafectivo",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "ánimo + psicosis",
+        "episodios"
+      ],
+      "cercanos_medio": [
+        "ánimo + psicosis",
+        "episodios",
+        "diferencial"
+      ],
+      "cercanos_dificil": [
+        "ánimo + psicosis",
+        "episodios",
+        "curso",
+        "diferencial"
+      ],
+      "prohibidas": [
+        "Trastorno esquizoafectivo",
+        "trastorno",
+        "esquizoafectivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_021",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno psicótico inducido por sustancias/medicamentos",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "temporalidad",
+        "cannabis"
+      ],
+      "cercanos_medio": [
+        "temporalidad",
+        "cannabis",
+        "estimulantes"
+      ],
+      "cercanos_dificil": [
+        "temporalidad",
+        "cannabis",
+        "estimulantes",
+        "intoxicación"
+      ],
+      "prohibidas": [
+        "Trastorno psicótico inducido por sustancias/medicamentos",
+        "trastorno",
+        "psicotico",
+        "inducido",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_022",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno psicótico debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "endocrino",
+        "neurológico"
+      ],
+      "cercanos_medio": [
+        "endocrino",
+        "neurológico",
+        "delirium ddx"
+      ],
+      "cercanos_dificil": [
+        "endocrino",
+        "neurológico",
+        "delirium ddx",
+        "inicio tardío"
+      ],
+      "prohibidas": [
+        "Trastorno psicótico debido a otra afección médica",
+        "trastorno",
+        "psicotico",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_023",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Catatonía asociada a otro trastorno mental",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "estupor",
+        "mutismo"
+      ],
+      "cercanos_medio": [
+        "estupor",
+        "mutismo",
+        "flexibilidad cérea"
+      ],
+      "cercanos_dificil": [
+        "estupor",
+        "mutismo",
+        "flexibilidad cérea",
+        "lorazepam"
+      ],
+      "prohibidas": [
+        "Catatonía asociada a otro trastorno mental",
+        "catatonia",
+        "asociada",
+        "trastorno",
+        "mental",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_024",
+      "categoria": "Psicóticos",
+      "subcategoria": null,
+      "palabra_secreta": "Catatonía debida a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "encefalitis",
+        "metabólico"
+      ],
+      "cercanos_medio": [
+        "encefalitis",
+        "metabólico",
+        "malignidad"
+      ],
+      "cercanos_dificil": [
+        "encefalitis",
+        "metabólico",
+        "malignidad",
+        "urgencias"
+      ],
+      "prohibidas": [
+        "Catatonía debida a otra afección médica",
+        "catatonia",
+        "debida",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_025",
+      "categoria": "Bipolares",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno bipolar I",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hospitalización",
+        "psicosis"
+      ],
+      "cercanos_medio": [
+        "hospitalización",
+        "psicosis",
+        "estabilizador"
+      ],
+      "cercanos_dificil": [
+        "manía",
+        "hospitalización",
+        "psicosis",
+        "estabilizador"
+      ],
+      "prohibidas": [
+        "Trastorno bipolar I",
+        "trastorno",
+        "bipolar",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_026",
+      "categoria": "Bipolares",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno bipolar II",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hipomanía",
+        "depresión"
+      ],
+      "cercanos_medio": [
+        "hipomanía",
+        "depresión",
+        "ciclos"
+      ],
+      "cercanos_dificil": [
+        "hipomanía",
+        "depresión",
+        "ciclos",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno bipolar II",
+        "trastorno",
+        "bipolar",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_027",
+      "categoria": "Bipolares",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno ciclotímico",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "crónico",
+        "subumbral"
+      ],
+      "cercanos_medio": [
+        "crónico",
+        "subumbral",
+        "temperamento"
+      ],
+      "cercanos_dificil": [
+        "crónico",
+        "subumbral",
+        "temperamento",
+        "fluctuación"
+      ],
+      "prohibidas": [
+        "Trastorno ciclotímico",
+        "trastorno",
+        "ciclotimico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_028",
+      "categoria": "Bipolares",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno bipolar inducido por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "estimulantes",
+        "corticoides"
+      ],
+      "cercanos_medio": [
+        "estimulantes",
+        "corticoides",
+        "temporalidad"
+      ],
+      "cercanos_dificil": [
+        "estimulantes",
+        "corticoides",
+        "temporalidad",
+        "iatrogenia"
+      ],
+      "prohibidas": [
+        "Trastorno bipolar inducido por sustancias/medicamentos",
+        "trastorno",
+        "bipolar",
+        "inducido",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_029",
+      "categoria": "Bipolares",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno bipolar debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hipertiroidismo",
+        "neurológico"
+      ],
+      "cercanos_medio": [
+        "hipertiroidismo",
+        "neurológico",
+        "inicio tardío"
+      ],
+      "cercanos_dificil": [
+        "hipertiroidismo",
+        "neurológico",
+        "inicio tardío",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Trastorno bipolar debido a otra afección médica",
+        "trastorno",
+        "bipolar",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_030",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de desregulación disruptiva del estado de ánimo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "irritabilidad",
+        "infancia"
+      ],
+      "cercanos_medio": [
+        "irritabilidad",
+        "infancia",
+        "arrebatos"
+      ],
+      "cercanos_dificil": [
+        "irritabilidad",
+        "infancia",
+        "arrebatos",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno de desregulación disruptiva del estado de ánimo",
+        "trastorno",
+        "desregulacion",
+        "disruptiva",
+        "estado",
+        "animo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_031",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno depresivo mayor",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "anhedonia",
+        "ideación suicida"
+      ],
+      "cercanos_medio": [
+        "anhedonia",
+        "ideación suicida",
+        "culpa"
+      ],
+      "cercanos_dificil": [
+        "anhedonia",
+        "culpa",
+        "sueño",
+        "ideación suicida"
+      ],
+      "prohibidas": [
+        "Trastorno depresivo mayor",
+        "trastorno",
+        "depresivo",
+        "mayor",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_032",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno depresivo persistente (distimia)",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "cronicidad",
+        "baja energía"
+      ],
+      "cercanos_medio": [
+        "cronicidad",
+        "baja energía",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "cronicidad",
+        "baja energía",
+        "funcionamiento",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno depresivo persistente (distimia)",
+        "trastorno",
+        "depresivo",
+        "persistente",
+        "distimia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_033",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno disfórico premenstrual",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "irritabilidad",
+        "labilidad"
+      ],
+      "cercanos_medio": [
+        "irritabilidad",
+        "labilidad",
+        "luteal"
+      ],
+      "cercanos_dificil": [
+        "luteal",
+        "irritabilidad",
+        "labilidad",
+        "ciclo"
+      ],
+      "prohibidas": [
+        "Trastorno disfórico premenstrual",
+        "trastorno",
+        "disforico",
+        "premenstrual",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_034",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno depresivo inducido por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "alcohol",
+        "temporalidad"
+      ],
+      "cercanos_medio": [
+        "alcohol",
+        "temporalidad",
+        "iatrogenia"
+      ],
+      "cercanos_dificil": [
+        "alcohol",
+        "temporalidad",
+        "iatrogenia",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno depresivo inducido por sustancias/medicamentos",
+        "trastorno",
+        "depresivo",
+        "inducido",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_035",
+      "categoria": "Depresivos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno depresivo debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hipotiroidismo",
+        "inflamación"
+      ],
+      "cercanos_medio": [
+        "hipotiroidismo",
+        "inflamación",
+        "neurológico"
+      ],
+      "cercanos_dificil": [
+        "hipotiroidismo",
+        "inflamación",
+        "neurológico",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Trastorno depresivo debido a otra afección médica",
+        "trastorno",
+        "depresivo",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_036",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad por separación",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "evitación escolar",
+        "somatización"
+      ],
+      "cercanos_medio": [
+        "evitación escolar",
+        "somatización",
+        "infancia"
+      ],
+      "cercanos_dificil": [
+        "apego",
+        "evitación escolar",
+        "somatización",
+        "infancia"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad por separación",
+        "trastorno",
+        "ansiedad",
+        "separacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_037",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Mutismo selectivo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "situacional",
+        "escuela"
+      ],
+      "cercanos_medio": [
+        "situacional",
+        "escuela",
+        "ansiedad social"
+      ],
+      "cercanos_dificil": [
+        "situacional",
+        "escuela",
+        "ansiedad social",
+        "infancia"
+      ],
+      "prohibidas": [
+        "Mutismo selectivo",
+        "mutismo",
+        "selectivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_038",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Fobia específica",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "disparador",
+        "anticipación"
+      ],
+      "cercanos_medio": [
+        "disparador",
+        "anticipación",
+        "evitación"
+      ],
+      "cercanos_dificil": [
+        "disparador",
+        "anticipación",
+        "evitación",
+        "condicionamiento"
+      ],
+      "prohibidas": [
+        "Fobia específica",
+        "fobia",
+        "especifica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_039",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad social",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "evaluación",
+        "vergüenza"
+      ],
+      "cercanos_medio": [
+        "evaluación",
+        "vergüenza",
+        "evitación"
+      ],
+      "cercanos_dificil": [
+        "evaluación",
+        "vergüenza",
+        "evitación",
+        "rendimiento"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad social",
+        "trastorno",
+        "ansiedad",
+        "social",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_040",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de pánico",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "miedo a morir",
+        "sensaciones corporales"
+      ],
+      "cercanos_medio": [
+        "miedo a morir",
+        "sensaciones corporales",
+        "crisis"
+      ],
+      "cercanos_dificil": [
+        "crisis",
+        "disnea",
+        "miedo a morir",
+        "sensaciones corporales"
+      ],
+      "prohibidas": [
+        "Trastorno de pánico",
+        "trastorno",
+        "panico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_041",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Agorafobia",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "escape difícil",
+        "lugares"
+      ],
+      "cercanos_medio": [
+        "escape difícil",
+        "lugares",
+        "evitación"
+      ],
+      "cercanos_dificil": [
+        "escape difícil",
+        "lugares",
+        "evitación",
+        "acompañante"
+      ],
+      "prohibidas": [
+        "Agorafobia",
+        "agorafobia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_042",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad generalizada",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "preocupación",
+        "tensión"
+      ],
+      "cercanos_medio": [
+        "preocupación",
+        "tensión",
+        "insomnio"
+      ],
+      "cercanos_dificil": [
+        "preocupación",
+        "tensión",
+        "insomnio",
+        "intolerancia a incertidumbre"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad generalizada",
+        "trastorno",
+        "ansiedad",
+        "generalizada",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_043",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad inducido por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "cafeína",
+        "estimulantes"
+      ],
+      "cercanos_medio": [
+        "cafeína",
+        "estimulantes",
+        "abstinencia"
+      ],
+      "cercanos_dificil": [
+        "cafeína",
+        "estimulantes",
+        "abstinencia",
+        "temporalidad"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad inducido por sustancias/medicamentos",
+        "trastorno",
+        "ansiedad",
+        "inducido",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_044",
+      "categoria": "Ansiedad",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hipertiroidismo",
+        "arritmia"
+      ],
+      "cercanos_medio": [
+        "hipertiroidismo",
+        "arritmia",
+        "secundario"
+      ],
+      "cercanos_dificil": [
+        "hipertiroidismo",
+        "arritmia",
+        "asma",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad debido a otra afección médica",
+        "trastorno",
+        "ansiedad",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_045",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno obsesivo-compulsivo",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "obsesiones",
+        "compulsiones"
+      ],
+      "cercanos_medio": [
+        "obsesiones",
+        "compulsiones",
+        "neutralización"
+      ],
+      "cercanos_dificil": [
+        "obsesiones",
+        "compulsiones",
+        "neutralización",
+        "SOC"
+      ],
+      "prohibidas": [
+        "Trastorno obsesivo-compulsivo",
+        "trastorno",
+        "obsesivo",
+        "compulsivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_046",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno dismórfico corporal",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "defecto percibido",
+        "camuflaje"
+      ],
+      "cercanos_medio": [
+        "defecto percibido",
+        "camuflaje",
+        "vergüenza"
+      ],
+      "cercanos_dificil": [
+        "defecto percibido",
+        "espejo",
+        "camuflaje",
+        "vergüenza"
+      ],
+      "prohibidas": [
+        "Trastorno dismórfico corporal",
+        "trastorno",
+        "dismorfico",
+        "corporal",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_047",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de acumulación",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "dificultad para desechar",
+        "apego a objetos"
+      ],
+      "cercanos_medio": [
+        "dificultad para desechar",
+        "apego a objetos",
+        "deterioro"
+      ],
+      "cercanos_dificil": [
+        "dificultad para desechar",
+        "apego a objetos",
+        "deterioro",
+        "hogar"
+      ],
+      "prohibidas": [
+        "Trastorno de acumulación",
+        "trastorno",
+        "acumulacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_048",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Tricotilomanía",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "tensión-alivio",
+        "tironeo"
+      ],
+      "cercanos_medio": [
+        "tensión-alivio",
+        "tironeo",
+        "automatismos"
+      ],
+      "cercanos_dificil": [
+        "tensión-alivio",
+        "tironeo",
+        "automatismos",
+        "comorbilidad"
+      ],
+      "prohibidas": [
+        "Tricotilomanía",
+        "tricotilomania",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_049",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de excoriación",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "rascado",
+        "lesiones"
+      ],
+      "cercanos_medio": [
+        "rascado",
+        "lesiones",
+        "repetición"
+      ],
+      "cercanos_dificil": [
+        "rascado",
+        "lesiones",
+        "urge",
+        "repetición"
+      ],
+      "prohibidas": [
+        "Trastorno de excoriación",
+        "trastorno",
+        "excoriacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_050",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "TOC inducido por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "estimulantes",
+        "temporalidad"
+      ],
+      "cercanos_medio": [
+        "estimulantes",
+        "temporalidad",
+        "iatrogenia"
+      ],
+      "cercanos_dificil": [
+        "estimulantes",
+        "temporalidad",
+        "iatrogenia",
+        "inicio"
+      ],
+      "prohibidas": [
+        "TOC inducido por sustancias/medicamentos",
+        "inducido",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_051",
+      "categoria": "TOC y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "TOC debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "neurológico",
+        "inicio tardío"
+      ],
+      "cercanos_medio": [
+        "neurológico",
+        "inicio tardío",
+        "secundario"
+      ],
+      "cercanos_dificil": [
+        "neurológico",
+        "inicio tardío",
+        "secundario",
+        "circuitos fronto-estriatales"
+      ],
+      "prohibidas": [
+        "TOC debido a otra afección médica",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_052",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de apego reactivo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "negligencia",
+        "inhibición"
+      ],
+      "cercanos_medio": [
+        "negligencia",
+        "inhibición",
+        "infancia"
+      ],
+      "cercanos_dificil": [
+        "negligencia",
+        "inhibición",
+        "infancia",
+        "vínculo"
+      ],
+      "prohibidas": [
+        "Trastorno de apego reactivo",
+        "trastorno",
+        "apego",
+        "reactivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_053",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de relación social desinhibida",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "familiaridad indiscriminada",
+        "negligencia"
+      ],
+      "cercanos_medio": [
+        "familiaridad indiscriminada",
+        "negligencia",
+        "infancia"
+      ],
+      "cercanos_dificil": [
+        "familiaridad indiscriminada",
+        "negligencia",
+        "infancia",
+        "apego"
+      ],
+      "prohibidas": [
+        "Trastorno de relación social desinhibida",
+        "trastorno",
+        "relacion",
+        "social",
+        "desinhibida",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_054",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de estrés postraumático",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "reexperimentación",
+        "evitación"
+      ],
+      "cercanos_medio": [
+        "reexperimentación",
+        "evitación",
+        "hipervigilancia"
+      ],
+      "cercanos_dificil": [
+        "reexperimentación",
+        "evitación",
+        "hipervigilancia",
+        "trauma"
+      ],
+      "prohibidas": [
+        "Trastorno de estrés postraumático",
+        "trastorno",
+        "estres",
+        "postraumatico",
+        "trauma",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_055",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de estrés agudo",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "disociación",
+        "trauma"
+      ],
+      "cercanos_medio": [
+        "disociación",
+        "trauma",
+        "inicio"
+      ],
+      "cercanos_dificil": [
+        "3 días–1 mes",
+        "disociación",
+        "trauma",
+        "inicio"
+      ],
+      "prohibidas": [
+        "Trastorno de estrés agudo",
+        "trastorno",
+        "estres",
+        "agudo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_056",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastornos de adaptación",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "estresor",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "estresor",
+        "malestar",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "estresor",
+        "inicio",
+        "malestar",
+        "funcionamiento"
+      ],
+      "prohibidas": [
+        "Trastornos de adaptación",
+        "trastornos",
+        "adaptacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_057",
+      "categoria": "Trauma y estrés",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de duelo prolongado",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "persistencia",
+        "funcionamiento"
+      ],
+      "cercanos_medio": [
+        "persistencia",
+        "funcionamiento",
+        "pérdida"
+      ],
+      "cercanos_dificil": [
+        "anhelo",
+        "persistencia",
+        "funcionamiento",
+        "pérdida"
+      ],
+      "prohibidas": [
+        "Trastorno de duelo prolongado",
+        "trastorno",
+        "duelo",
+        "prolongado",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_058",
+      "categoria": "Disociativos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de identidad disociativo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "amnesia",
+        "switching"
+      ],
+      "cercanos_medio": [
+        "amnesia",
+        "switching",
+        "partes"
+      ],
+      "cercanos_dificil": [
+        "partes",
+        "amnesia",
+        "trauma",
+        "switching"
+      ],
+      "prohibidas": [
+        "Trastorno de identidad disociativo",
+        "trastorno",
+        "identidad",
+        "disociativo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_059",
+      "categoria": "Disociativos",
+      "subcategoria": null,
+      "palabra_secreta": "Amnesia disociativa",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "lagunas",
+        "autobiográfico"
+      ],
+      "cercanos_medio": [
+        "lagunas",
+        "autobiográfico",
+        "estrés"
+      ],
+      "cercanos_dificil": [
+        "lagunas",
+        "autobiográfico",
+        "estrés",
+        "fuga"
+      ],
+      "prohibidas": [
+        "Amnesia disociativa",
+        "amnesia",
+        "disociativa",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_060",
+      "categoria": "Disociativos",
+      "subcategoria": null,
+      "palabra_secreta": "Despersonalización/desrealización",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "extrañeza",
+        "como sueño"
+      ],
+      "cercanos_medio": [
+        "extrañeza",
+        "como sueño",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "extrañeza",
+        "como sueño",
+        "ansiedad",
+        "pánico"
+      ],
+      "prohibidas": [
+        "Despersonalización/desrealización",
+        "despersonalizacion",
+        "desrealizacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_061",
+      "categoria": "Somáticos y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de síntomas somáticos",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "somatización",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "somatización",
+        "malestar",
+        "preocupación"
+      ],
+      "cercanos_dificil": [
+        "somatización",
+        "malestar",
+        "preocupación",
+        "utilización de servicios"
+      ],
+      "prohibidas": [
+        "Trastorno de síntomas somáticos",
+        "trastorno",
+        "sintomas",
+        "somaticos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_062",
+      "categoria": "Somáticos y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de ansiedad por enfermedad",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hipocondría",
+        "chequeo"
+      ],
+      "cercanos_medio": [
+        "hipocondría",
+        "chequeo",
+        "seguridad"
+      ],
+      "cercanos_dificil": [
+        "hipocondría",
+        "chequeo",
+        "seguridad",
+        "interpretación catastrófica"
+      ],
+      "prohibidas": [
+        "Trastorno de ansiedad por enfermedad",
+        "trastorno",
+        "ansiedad",
+        "enfermedad",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_063",
+      "categoria": "Somáticos y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno neurológico funcional (conversión)",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "síntomas motores",
+        "inconsistencia"
+      ],
+      "cercanos_medio": [
+        "síntomas motores",
+        "inconsistencia",
+        "no lesión"
+      ],
+      "cercanos_dificil": [
+        "síntomas motores",
+        "inconsistencia",
+        "estrés",
+        "no lesión"
+      ],
+      "prohibidas": [
+        "Trastorno neurológico funcional (conversión)",
+        "trastorno",
+        "neurologico",
+        "funcional",
+        "conversion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_064",
+      "categoria": "Somáticos y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Factores psicológicos que afectan afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "adherencia",
+        "exacerbación"
+      ],
+      "cercanos_medio": [
+        "adherencia",
+        "exacerbación",
+        "conducta"
+      ],
+      "cercanos_dificil": [
+        "adherencia",
+        "estrés",
+        "exacerbación",
+        "conducta"
+      ],
+      "prohibidas": [
+        "Factores psicológicos que afectan afección médica",
+        "factores",
+        "psicologicos",
+        "afectan",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_065",
+      "categoria": "Somáticos y relacionados",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno facticio",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "falsificación",
+        "atención médica"
+      ],
+      "cercanos_medio": [
+        "falsificación",
+        "atención médica",
+        "iatrogenia"
+      ],
+      "cercanos_dificil": [
+        "falsificación",
+        "atención médica",
+        "iatrogenia",
+        "peregrinaje"
+      ],
+      "prohibidas": [
+        "Trastorno facticio",
+        "trastorno",
+        "facticio",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_066",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "Pica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "ingesta no nutritiva",
+        "embarazo"
+      ],
+      "cercanos_medio": [
+        "ingesta no nutritiva",
+        "embarazo",
+        "deficiencias"
+      ],
+      "cercanos_dificil": [
+        "ingesta no nutritiva",
+        "niñez",
+        "embarazo",
+        "deficiencias"
+      ],
+      "prohibidas": [
+        "Pica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_067",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de rumiación",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "regurgitación",
+        "infancia"
+      ],
+      "cercanos_medio": [
+        "regurgitación",
+        "infancia",
+        "peso"
+      ],
+      "cercanos_dificil": [
+        "regurgitación",
+        "infancia",
+        "peso",
+        "gastro"
+      ],
+      "prohibidas": [
+        "Trastorno de rumiación",
+        "trastorno",
+        "rumiacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_068",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "ARFID",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "selectividad",
+        "aversión"
+      ],
+      "cercanos_medio": [
+        "selectividad",
+        "aversión",
+        "sensorial"
+      ],
+      "cercanos_dificil": [
+        "selectividad",
+        "aversión",
+        "peso",
+        "sensorial"
+      ],
+      "prohibidas": [
+        "ARFID",
+        "arfid",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_069",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "Anorexia nerviosa",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "restricción",
+        "imagen corporal"
+      ],
+      "cercanos_medio": [
+        "restricción",
+        "imagen corporal",
+        "bradicardia"
+      ],
+      "cercanos_dificil": [
+        "restricción",
+        "imagen corporal",
+        "bradicardia",
+        "riesgo médico"
+      ],
+      "prohibidas": [
+        "Anorexia nerviosa",
+        "anorexia",
+        "nerviosa",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_070",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "Bulimia nerviosa",
+      "dificultad": 1,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "atracones",
+        "hipopotasemia"
+      ],
+      "cercanos_medio": [
+        "atracones",
+        "hipopotasemia",
+        "secreto"
+      ],
+      "cercanos_dificil": [
+        "atracones",
+        "purga",
+        "hipopotasemia",
+        "secreto"
+      ],
+      "prohibidas": [
+        "Bulimia nerviosa",
+        "bulimia",
+        "nerviosa",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_071",
+      "categoria": "Alimentación e ingesta",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno por atracones",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "pérdida de control",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "pérdida de control",
+        "malestar",
+        "no purga"
+      ],
+      "cercanos_dificil": [
+        "pérdida de control",
+        "malestar",
+        "culpa",
+        "no purga"
+      ],
+      "prohibidas": [
+        "Trastorno por atracones",
+        "trastorno",
+        "atracones",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_072",
+      "categoria": "Eliminación",
+      "subcategoria": null,
+      "palabra_secreta": "Enuresis",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "nocturna",
+        "primaria"
+      ],
+      "cercanos_medio": [
+        "nocturna",
+        "primaria",
+        "desarrollo"
+      ],
+      "cercanos_dificil": [
+        "nocturna",
+        "primaria",
+        "desarrollo",
+        "conductual"
+      ],
+      "prohibidas": [
+        "Enuresis",
+        "enuresis",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_073",
+      "categoria": "Eliminación",
+      "subcategoria": null,
+      "palabra_secreta": "Encopresis",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "estreñimiento",
+        "retención"
+      ],
+      "cercanos_medio": [
+        "estreñimiento",
+        "retención",
+        "funcional"
+      ],
+      "cercanos_dificil": [
+        "estreñimiento",
+        "retención",
+        "funcional",
+        "escolar"
+      ],
+      "prohibidas": [
+        "Encopresis",
+        "encopresis",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_074",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de insomnio",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "latencia",
+        "mantenimiento"
+      ],
+      "cercanos_medio": [
+        "latencia",
+        "mantenimiento",
+        "higiene"
+      ],
+      "cercanos_dificil": [
+        "latencia",
+        "mantenimiento",
+        "CBT-I",
+        "higiene"
+      ],
+      "prohibidas": [
+        "Trastorno de insomnio",
+        "trastorno",
+        "insomnio",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_075",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de hipersomnia",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "somnolencia",
+        "depresión"
+      ],
+      "cercanos_medio": [
+        "somnolencia",
+        "depresión",
+        "apnea ddx"
+      ],
+      "cercanos_dificil": [
+        "somnolencia",
+        "depresión",
+        "apnea ddx",
+        "sueño prolongado"
+      ],
+      "prohibidas": [
+        "Trastorno de hipersomnia",
+        "trastorno",
+        "hipersomnia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_076",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Narcolepsia",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "cataplejía",
+        "hipnagógicas"
+      ],
+      "cercanos_medio": [
+        "cataplejía",
+        "hipnagógicas",
+        "orexina"
+      ],
+      "cercanos_dificil": [
+        "cataplejía",
+        "hipnagógicas",
+        "orexina",
+        "REM"
+      ],
+      "prohibidas": [
+        "Narcolepsia",
+        "narcolepsia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_077",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Apnea obstructiva del sueño",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "ronquido",
+        "somnolencia"
+      ],
+      "cercanos_medio": [
+        "ronquido",
+        "somnolencia",
+        "CPAP"
+      ],
+      "cercanos_dificil": [
+        "ronquido",
+        "CPAP",
+        "somnolencia",
+        "IMC"
+      ],
+      "prohibidas": [
+        "Apnea obstructiva del sueño",
+        "apnea",
+        "obstructiva",
+        "sueno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_078",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Apnea central del sueño",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "Cheyne-Stokes",
+        "insuficiencia cardiaca"
+      ],
+      "cercanos_medio": [
+        "Cheyne-Stokes",
+        "insuficiencia cardiaca",
+        "polisomnografía"
+      ],
+      "cercanos_dificil": [
+        "Cheyne-Stokes",
+        "insuficiencia cardiaca",
+        "polisomnografía",
+        "ventilación"
+      ],
+      "prohibidas": [
+        "Apnea central del sueño",
+        "apnea",
+        "central",
+        "sueno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_079",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Hipoventilación relacionada con el sueño",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "obesidad",
+        "hipercapnia"
+      ],
+      "cercanos_medio": [
+        "obesidad",
+        "hipercapnia",
+        "somnolencia"
+      ],
+      "cercanos_dificil": [
+        "obesidad",
+        "hipercapnia",
+        "somnolencia",
+        "ventilación"
+      ],
+      "prohibidas": [
+        "Hipoventilación relacionada con el sueño",
+        "hipoventilacion",
+        "relacionada",
+        "sueno",
+        "ventilación",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_080",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Ritmo circadiano (fase retrasada)",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "adolescentes",
+        "melatonina"
+      ],
+      "cercanos_medio": [
+        "adolescentes",
+        "melatonina",
+        "jet lag"
+      ],
+      "cercanos_dificil": [
+        "adolescentes",
+        "luz",
+        "melatonina",
+        "jet lag"
+      ],
+      "prohibidas": [
+        "Ritmo circadiano (fase retrasada)",
+        "ritmo",
+        "circadiano",
+        "retrasada",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_081",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Sonambulismo (no REM)",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "parasomnia",
+        "amnesia"
+      ],
+      "cercanos_medio": [
+        "parasomnia",
+        "amnesia",
+        "seguridad"
+      ],
+      "cercanos_dificil": [
+        "parasomnia",
+        "amnesia",
+        "seguridad",
+        "niñez"
+      ],
+      "prohibidas": [
+        "Sonambulismo (no REM)",
+        "sonambulismo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_082",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Terrores del sueño (no REM)",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "taquicardia",
+        "amnesia"
+      ],
+      "cercanos_medio": [
+        "taquicardia",
+        "amnesia",
+        "gritos"
+      ],
+      "cercanos_dificil": [
+        "gritos",
+        "taquicardia",
+        "amnesia",
+        "niñez"
+      ],
+      "prohibidas": [
+        "Terrores del sueño (no REM)",
+        "terrores",
+        "sueno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_083",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de pesadillas",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "despertares",
+        "contenido"
+      ],
+      "cercanos_medio": [
+        "despertares",
+        "contenido",
+        "REM"
+      ],
+      "cercanos_dificil": [
+        "REM",
+        "despertares",
+        "estrés",
+        "contenido"
+      ],
+      "prohibidas": [
+        "Trastorno de pesadillas",
+        "trastorno",
+        "pesadillas",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_084",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Conducta del sueño REM",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "actuar sueños",
+        "sinucleinopatía"
+      ],
+      "cercanos_medio": [
+        "actuar sueños",
+        "sinucleinopatía",
+        "clonazepam"
+      ],
+      "cercanos_dificil": [
+        "actuar sueños",
+        "sinucleinopatía",
+        "clonazepam",
+        "lesiones"
+      ],
+      "prohibidas": [
+        "Conducta del sueño REM",
+        "conducta",
+        "sueno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_085",
+      "categoria": "Sueño-vigilia",
+      "subcategoria": null,
+      "palabra_secreta": "Piernas inquietas",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "urge mover",
+        "alivio con movimiento"
+      ],
+      "cercanos_medio": [
+        "urge mover",
+        "alivio con movimiento",
+        "hierro"
+      ],
+      "cercanos_dificil": [
+        "urge mover",
+        "hierro",
+        "noche",
+        "alivio con movimiento"
+      ],
+      "prohibidas": [
+        "Piernas inquietas",
+        "piernas",
+        "inquietas",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_086",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno eréctil",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "vascular",
+        "ansiedad de desempeño"
+      ],
+      "cercanos_medio": [
+        "vascular",
+        "ansiedad de desempeño",
+        "endocrino"
+      ],
+      "cercanos_dificil": [
+        "vascular",
+        "ansiedad de desempeño",
+        "ISRS",
+        "endocrino"
+      ],
+      "prohibidas": [
+        "Trastorno eréctil",
+        "trastorno",
+        "erectil",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_087",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Eyaculación retardada",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "latencia",
+        "orgasmo"
+      ],
+      "cercanos_medio": [
+        "latencia",
+        "orgasmo",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "ISRS",
+        "latencia",
+        "orgasmo",
+        "ansiedad"
+      ],
+      "prohibidas": [
+        "Eyaculación retardada",
+        "eyaculacion",
+        "retardada",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_088",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Eyaculación precoz",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "latencia corta",
+        "control"
+      ],
+      "cercanos_medio": [
+        "latencia corta",
+        "control",
+        "terapia"
+      ],
+      "cercanos_dificil": [
+        "latencia corta",
+        "control",
+        "terapia",
+        "ISRS"
+      ],
+      "prohibidas": [
+        "Eyaculación precoz",
+        "eyaculacion",
+        "precoz",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_089",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno orgásmico femenino",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "anorgasmia",
+        "ansiedad"
+      ],
+      "cercanos_medio": [
+        "anorgasmia",
+        "ansiedad",
+        "pareja"
+      ],
+      "cercanos_dificil": [
+        "anorgasmia",
+        "ISRS",
+        "pareja",
+        "ansiedad"
+      ],
+      "prohibidas": [
+        "Trastorno orgásmico femenino",
+        "trastorno",
+        "orgasmico",
+        "femenino",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_090",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Interés/excitación sexual femenino",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "hormonal",
+        "relación"
+      ],
+      "cercanos_medio": [
+        "hormonal",
+        "relación",
+        "deseo"
+      ],
+      "cercanos_dificil": [
+        "deseo",
+        "hormonal",
+        "relación",
+        "estrés"
+      ],
+      "prohibidas": [
+        "Interés/excitación sexual femenino",
+        "interes",
+        "excitacion",
+        "sexual",
+        "femenino",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_091",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Dolor genito-pélvico/penetración",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "vaginismo",
+        "dispareunia"
+      ],
+      "cercanos_medio": [
+        "vaginismo",
+        "dispareunia",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "vaginismo",
+        "dispareunia",
+        "ansiedad",
+        "trauma"
+      ],
+      "prohibidas": [
+        "Dolor genito-pélvico/penetración",
+        "dolor",
+        "genito",
+        "pelvico",
+        "penetracion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_092",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Deseo sexual hipoactivo masculino",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "testosterona",
+        "depresión"
+      ],
+      "cercanos_medio": [
+        "testosterona",
+        "depresión",
+        "relación"
+      ],
+      "cercanos_dificil": [
+        "deseo",
+        "testosterona",
+        "depresión",
+        "relación"
+      ],
+      "prohibidas": [
+        "Deseo sexual hipoactivo masculino",
+        "deseo",
+        "sexual",
+        "hipoactivo",
+        "masculino",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_093",
+      "categoria": "Disfunciones sexuales",
+      "subcategoria": null,
+      "palabra_secreta": "Disfunción sexual inducida por sustancias/medicamentos",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "antipsicótico",
+        "alcohol"
+      ],
+      "cercanos_medio": [
+        "antipsicótico",
+        "alcohol",
+        "temporalidad"
+      ],
+      "cercanos_dificil": [
+        "ISRS",
+        "antipsicótico",
+        "alcohol",
+        "temporalidad"
+      ],
+      "prohibidas": [
+        "Disfunción sexual inducida por sustancias/medicamentos",
+        "disfuncion",
+        "sexual",
+        "inducida",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_094",
+      "categoria": "Disforia de género",
+      "subcategoria": null,
+      "palabra_secreta": "Disforia de género en niños",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "incongruencia",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "incongruencia",
+        "malestar",
+        "apoyo familiar"
+      ],
+      "cercanos_dificil": [
+        "incongruencia",
+        "malestar",
+        "roles",
+        "apoyo familiar"
+      ],
+      "prohibidas": [
+        "Disforia de género en niños",
+        "disforia",
+        "genero",
+        "ninos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_095",
+      "categoria": "Disforia de género",
+      "subcategoria": null,
+      "palabra_secreta": "Disforia de género en adolescentes y adultos",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "incongruencia",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "incongruencia",
+        "malestar",
+        "transición"
+      ],
+      "cercanos_dificil": [
+        "incongruencia",
+        "malestar",
+        "transición",
+        "estigma"
+      ],
+      "prohibidas": [
+        "Disforia de género en adolescentes y adultos",
+        "disforia",
+        "genero",
+        "adolescentes",
+        "adultos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_096",
+      "categoria": "Disruptivos e impulsos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno negativista desafiante",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "desafío",
+        "irritabilidad"
+      ],
+      "cercanos_medio": [
+        "desafío",
+        "irritabilidad",
+        "familia"
+      ],
+      "cercanos_dificil": [
+        "desafío",
+        "irritabilidad",
+        "familia",
+        "escuela"
+      ],
+      "prohibidas": [
+        "Trastorno negativista desafiante",
+        "trastorno",
+        "negativista",
+        "desafiante",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_097",
+      "categoria": "Disruptivos e impulsos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno explosivo intermitente",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "arrebatos",
+        "desproporción"
+      ],
+      "cercanos_medio": [
+        "arrebatos",
+        "desproporción",
+        "impulsividad"
+      ],
+      "cercanos_dificil": [
+        "arrebatos",
+        "desproporción",
+        "impulsividad",
+        "arrepentimiento"
+      ],
+      "prohibidas": [
+        "Trastorno explosivo intermitente",
+        "trastorno",
+        "explosivo",
+        "intermitente",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_098",
+      "categoria": "Disruptivos e impulsos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de conducta",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "agresión",
+        "riesgo antisocial"
+      ],
+      "cercanos_medio": [
+        "agresión",
+        "riesgo antisocial",
+        "normas"
+      ],
+      "cercanos_dificil": [
+        "agresión",
+        "normas",
+        "inicio",
+        "riesgo antisocial"
+      ],
+      "prohibidas": [
+        "Trastorno de conducta",
+        "trastorno",
+        "conducta",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_099",
+      "categoria": "Disruptivos e impulsos",
+      "subcategoria": null,
+      "palabra_secreta": "Piromanía",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fascinación fuego",
+        "tensión-alivio"
+      ],
+      "cercanos_medio": [
+        "fascinación fuego",
+        "tensión-alivio",
+        "impulso"
+      ],
+      "cercanos_dificil": [
+        "fascinación fuego",
+        "tensión-alivio",
+        "impulso",
+        "rareza"
+      ],
+      "prohibidas": [
+        "Piromanía",
+        "piromania",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_100",
+      "categoria": "Disruptivos e impulsos",
+      "subcategoria": null,
+      "palabra_secreta": "Cleptomanía",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "tensión-alivio",
+        "impulsividad"
+      ],
+      "cercanos_medio": [
+        "tensión-alivio",
+        "impulsividad",
+        "robo"
+      ],
+      "cercanos_dificil": [
+        "robo",
+        "tensión-alivio",
+        "culpa",
+        "impulsividad"
+      ],
+      "prohibidas": [
+        "Cleptomanía",
+        "cleptomania",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_101",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de alcohol",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "craving",
+        "tolerancia"
+      ],
+      "cercanos_medio": [
+        "craving",
+        "tolerancia",
+        "abstinencia"
+      ],
+      "cercanos_dificil": [
+        "craving",
+        "tolerancia",
+        "abstinencia",
+        "daño"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de alcohol",
+        "trastorno",
+        "alcohol",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_102",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de cafeína",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "intoxicación",
+        "ansiedad"
+      ],
+      "cercanos_medio": [
+        "intoxicación",
+        "ansiedad",
+        "insomnio"
+      ],
+      "cercanos_dificil": [
+        "intoxicación",
+        "ansiedad",
+        "insomnio",
+        "palpitaciones"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de cafeína",
+        "trastorno",
+        "cafeina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_103",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de cannabis",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "uso problemático",
+        "amotivación"
+      ],
+      "cercanos_medio": [
+        "uso problemático",
+        "amotivación",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "uso problemático",
+        "amotivación",
+        "ansiedad",
+        "psicosis riesgo"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de cannabis",
+        "trastorno",
+        "cannabis",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_104",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de alucinógenos (PCP)",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "intoxicación",
+        "nystagmus"
+      ],
+      "cercanos_medio": [
+        "intoxicación",
+        "nystagmus",
+        "agitación"
+      ],
+      "cercanos_dificil": [
+        "intoxicación",
+        "nystagmus",
+        "agitación",
+        "psicosis"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de alucinógenos (PCP)",
+        "trastorno",
+        "alucinogenos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_105",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de alucinógenos (otros)",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "percepción",
+        "flashbacks"
+      ],
+      "cercanos_medio": [
+        "percepción",
+        "flashbacks",
+        "set & setting"
+      ],
+      "cercanos_dificil": [
+        "percepción",
+        "flashbacks",
+        "pánico",
+        "set & setting"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de alucinógenos (otros)",
+        "trastorno",
+        "alucinogenos",
+        "otros",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_106",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de inhalantes",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "neurotoxicidad",
+        "adolescentes"
+      ],
+      "cercanos_medio": [
+        "neurotoxicidad",
+        "adolescentes",
+        "intoxicación"
+      ],
+      "cercanos_dificil": [
+        "neurotoxicidad",
+        "adolescentes",
+        "intoxicación",
+        "daño"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de inhalantes",
+        "trastorno",
+        "inhalantes",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_107",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de opioides",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "sobredosis",
+        "naloxona"
+      ],
+      "cercanos_medio": [
+        "sobredosis",
+        "naloxona",
+        "abstinencia"
+      ],
+      "cercanos_dificil": [
+        "sobredosis",
+        "naloxona",
+        "abstinencia",
+        "metadona/buprenorfina"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de opioides",
+        "trastorno",
+        "opioides",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_108",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de sedantes/hipnóticos/ansiolíticos",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "benzodiacepinas",
+        "abstinencia"
+      ],
+      "cercanos_medio": [
+        "benzodiacepinas",
+        "abstinencia",
+        "sedación"
+      ],
+      "cercanos_dificil": [
+        "benzodiacepinas",
+        "abstinencia",
+        "sedación",
+        "dependencia"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de sedantes/hipnóticos/ansiolíticos",
+        "trastorno",
+        "sedantes",
+        "hipnoticos",
+        "ansioliticos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_109",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de estimulantes",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "cocaína",
+        "anfetaminas"
+      ],
+      "cercanos_medio": [
+        "cocaína",
+        "anfetaminas",
+        "paranoia"
+      ],
+      "cercanos_dificil": [
+        "cocaína",
+        "anfetaminas",
+        "paranoia",
+        "insomnio"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de estimulantes",
+        "trastorno",
+        "estimulantes",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_110",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de tabaco",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "nicotina",
+        "craving"
+      ],
+      "cercanos_medio": [
+        "nicotina",
+        "craving",
+        "parches"
+      ],
+      "cercanos_dificil": [
+        "nicotina",
+        "craving",
+        "parches",
+        "abstinencia"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de tabaco",
+        "trastorno",
+        "tabaco",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_111",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Trastorno por uso de sustancias",
+      "palabra_secreta": "Trastorno por uso de otras sustancias",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR",
+        "adicciones"
+      ],
+      "cercanos_facil": [
+        "policonsumo",
+        "temporalidad"
+      ],
+      "cercanos_medio": [
+        "policonsumo",
+        "temporalidad",
+        "abstinencia"
+      ],
+      "cercanos_dificil": [
+        "policonsumo",
+        "temporalidad",
+        "daño",
+        "abstinencia"
+      ],
+      "prohibidas": [
+        "Trastorno por uso de otras sustancias",
+        "trastorno",
+        "otras",
+        "sustancias",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_112",
+      "categoria": "Sustancias y adictivos",
+      "subcategoria": "Adictivo sin sustancia",
+      "palabra_secreta": "Trastorno por juego de apuestas",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "pérdida de control",
+        "chasing"
+      ],
+      "cercanos_medio": [
+        "pérdida de control",
+        "chasing",
+        "ocultamiento"
+      ],
+      "cercanos_dificil": [
+        "pérdida de control",
+        "chasing",
+        "deuda",
+        "ocultamiento"
+      ],
+      "prohibidas": [
+        "Trastorno por juego de apuestas",
+        "trastorno",
+        "juego",
+        "apuestas",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_113",
+      "categoria": "Neurocognitivos",
+      "subcategoria": null,
+      "palabra_secreta": "Delirium",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fluctuante",
+        "atención"
+      ],
+      "cercanos_medio": [
+        "fluctuante",
+        "atención",
+        "infección"
+      ],
+      "cercanos_dificil": [
+        "fluctuante",
+        "atención",
+        "infección",
+        "anticolinérgico"
+      ],
+      "prohibidas": [
+        "Delirium",
+        "delirium",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_114",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por Alzheimer",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "memoria",
+        "progresivo"
+      ],
+      "cercanos_medio": [
+        "memoria",
+        "progresivo",
+        "biomarcadores"
+      ],
+      "cercanos_dificil": [
+        "memoria",
+        "progresivo",
+        "biomarcadores",
+        "función"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por Alzheimer",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "alzheimer",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_115",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por Alzheimer",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "memoria",
+        "progresivo"
+      ],
+      "cercanos_medio": [
+        "memoria",
+        "progresivo",
+        "biomarcadores"
+      ],
+      "cercanos_dificil": [
+        "memoria",
+        "progresivo",
+        "biomarcadores",
+        "función"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por Alzheimer",
+        "trastorno",
+        "neurocognitivo",
+        "alzheimer",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_116",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por frontotemporal",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "conducta",
+        "lenguaje"
+      ],
+      "cercanos_medio": [
+        "conducta",
+        "lenguaje",
+        "desinhibición"
+      ],
+      "cercanos_dificil": [
+        "conducta",
+        "lenguaje",
+        "desinhibición",
+        "frontal"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por frontotemporal",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "frontotemporal",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_117",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por frontotemporal",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "conducta",
+        "lenguaje"
+      ],
+      "cercanos_medio": [
+        "conducta",
+        "lenguaje",
+        "desinhibición"
+      ],
+      "cercanos_dificil": [
+        "conducta",
+        "lenguaje",
+        "desinhibición",
+        "frontal"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por frontotemporal",
+        "trastorno",
+        "neurocognitivo",
+        "frontotemporal",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_118",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por cuerpos de Lewy",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fluctuación",
+        "alucinaciones"
+      ],
+      "cercanos_medio": [
+        "fluctuación",
+        "alucinaciones",
+        "parkinsonismo"
+      ],
+      "cercanos_dificil": [
+        "fluctuación",
+        "alucinaciones",
+        "parkinsonismo",
+        "sensibilidad neurolépticos"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por cuerpos de Lewy",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "cuerpos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_119",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por cuerpos de Lewy",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fluctuación",
+        "alucinaciones"
+      ],
+      "cercanos_medio": [
+        "fluctuación",
+        "alucinaciones",
+        "parkinsonismo"
+      ],
+      "cercanos_dificil": [
+        "fluctuación",
+        "alucinaciones",
+        "parkinsonismo",
+        "sensibilidad neurolépticos"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por cuerpos de Lewy",
+        "trastorno",
+        "neurocognitivo",
+        "cuerpos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_120",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por vascular",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "stepwise",
+        "factores de riesgo"
+      ],
+      "cercanos_medio": [
+        "stepwise",
+        "factores de riesgo",
+        "lesiones"
+      ],
+      "cercanos_dificil": [
+        "stepwise",
+        "factores de riesgo",
+        "lesiones",
+        "executivo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por vascular",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "vascular",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_121",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por vascular",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "stepwise",
+        "factores de riesgo"
+      ],
+      "cercanos_medio": [
+        "stepwise",
+        "factores de riesgo",
+        "lesiones"
+      ],
+      "cercanos_dificil": [
+        "stepwise",
+        "factores de riesgo",
+        "lesiones",
+        "executivo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por vascular",
+        "trastorno",
+        "neurocognitivo",
+        "vascular",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_122",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por lesión cerebral traumática",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "historia trauma",
+        "déficits"
+      ],
+      "cercanos_medio": [
+        "historia trauma",
+        "déficits",
+        "cognición"
+      ],
+      "cercanos_dificil": [
+        "historia trauma",
+        "déficits",
+        "cognición",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por lesión cerebral traumática",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "lesion",
+        "cerebral",
+        "traumatica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_123",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por lesión cerebral traumática",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "historia trauma",
+        "déficits"
+      ],
+      "cercanos_medio": [
+        "historia trauma",
+        "déficits",
+        "cognición"
+      ],
+      "cercanos_dificil": [
+        "historia trauma",
+        "déficits",
+        "cognición",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por lesión cerebral traumática",
+        "trastorno",
+        "neurocognitivo",
+        "lesion",
+        "cerebral",
+        "traumatica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_124",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "intoxicación",
+        "abstinencia"
+      ],
+      "cercanos_medio": [
+        "intoxicación",
+        "abstinencia",
+        "iatrogenia"
+      ],
+      "cercanos_dificil": [
+        "intoxicación",
+        "abstinencia",
+        "iatrogenia",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por sustancias/medicamentos",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_125",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por sustancias/medicamentos",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "intoxicación",
+        "abstinencia"
+      ],
+      "cercanos_medio": [
+        "intoxicación",
+        "abstinencia",
+        "iatrogenia"
+      ],
+      "cercanos_dificil": [
+        "intoxicación",
+        "abstinencia",
+        "iatrogenia",
+        "curso"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por sustancias/medicamentos",
+        "trastorno",
+        "neurocognitivo",
+        "sustancias",
+        "medicamentos",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_126",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por VIH",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "subcortical",
+        "infección"
+      ],
+      "cercanos_medio": [
+        "subcortical",
+        "infección",
+        "tratamiento"
+      ],
+      "cercanos_dificil": [
+        "subcortical",
+        "lento",
+        "infección",
+        "tratamiento"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por VIH",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_127",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por VIH",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "subcortical",
+        "infección"
+      ],
+      "cercanos_medio": [
+        "subcortical",
+        "infección",
+        "tratamiento"
+      ],
+      "cercanos_dificil": [
+        "subcortical",
+        "lento",
+        "infección",
+        "tratamiento"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por VIH",
+        "trastorno",
+        "neurocognitivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_128",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por priones",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "mioclonías",
+        "rápido"
+      ],
+      "cercanos_medio": [
+        "mioclonías",
+        "rápido",
+        "ataxia"
+      ],
+      "cercanos_dificil": [
+        "rápido",
+        "mioclonías",
+        "ataxia",
+        "fatal"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por priones",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "priones",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_129",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por priones",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "mioclonías",
+        "rápido"
+      ],
+      "cercanos_medio": [
+        "mioclonías",
+        "rápido",
+        "ataxia"
+      ],
+      "cercanos_dificil": [
+        "rápido",
+        "mioclonías",
+        "ataxia",
+        "fatal"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por priones",
+        "trastorno",
+        "neurocognitivo",
+        "priones",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_130",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por Parkinson",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "bradicinesia",
+        "executivo"
+      ],
+      "cercanos_medio": [
+        "bradicinesia",
+        "executivo",
+        "alucinaciones"
+      ],
+      "cercanos_dificil": [
+        "bradicinesia",
+        "executivo",
+        "alucinaciones",
+        "dopamina"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por Parkinson",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "parkinson",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_131",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por Parkinson",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "bradicinesia",
+        "executivo"
+      ],
+      "cercanos_medio": [
+        "bradicinesia",
+        "executivo",
+        "alucinaciones"
+      ],
+      "cercanos_dificil": [
+        "bradicinesia",
+        "executivo",
+        "alucinaciones",
+        "dopamina"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por Parkinson",
+        "trastorno",
+        "neurocognitivo",
+        "parkinson",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_132",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por Huntington",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "genético",
+        "psiquiátrico"
+      ],
+      "cercanos_medio": [
+        "genético",
+        "psiquiátrico",
+        "executivo"
+      ],
+      "cercanos_dificil": [
+        "corea",
+        "genético",
+        "psiquiátrico",
+        "executivo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por Huntington",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "huntington",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_133",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por Huntington",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "genético",
+        "psiquiátrico"
+      ],
+      "cercanos_medio": [
+        "genético",
+        "psiquiátrico",
+        "executivo"
+      ],
+      "cercanos_dificil": [
+        "corea",
+        "genético",
+        "psiquiátrico",
+        "executivo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por Huntington",
+        "trastorno",
+        "neurocognitivo",
+        "huntington",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_134",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "endocrino",
+        "neurológico"
+      ],
+      "cercanos_medio": [
+        "endocrino",
+        "neurológico",
+        "metabólico"
+      ],
+      "cercanos_dificil": [
+        "endocrino",
+        "neurológico",
+        "metabólico",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por otra afección médica",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_135",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "endocrino",
+        "neurológico"
+      ],
+      "cercanos_medio": [
+        "endocrino",
+        "neurológico",
+        "metabólico"
+      ],
+      "cercanos_dificil": [
+        "endocrino",
+        "neurológico",
+        "metabólico",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por otra afección médica",
+        "trastorno",
+        "neurocognitivo",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_136",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Mayor",
+      "palabra_secreta": "Trastorno neurocognitivo mayor por etiologías múltiples",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "comorbilidad",
+        "envejecimiento"
+      ],
+      "cercanos_medio": [
+        "comorbilidad",
+        "envejecimiento",
+        "mixto"
+      ],
+      "cercanos_dificil": [
+        "mixto",
+        "comorbilidad",
+        "envejecimiento",
+        "riesgo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo mayor por etiologías múltiples",
+        "trastorno",
+        "neurocognitivo",
+        "mayor",
+        "etiologias",
+        "multiples",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_137",
+      "categoria": "Neurocognitivos",
+      "subcategoria": "Leve",
+      "palabra_secreta": "Trastorno neurocognitivo leve por etiologías múltiples",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "comorbilidad",
+        "envejecimiento"
+      ],
+      "cercanos_medio": [
+        "comorbilidad",
+        "envejecimiento",
+        "mixto"
+      ],
+      "cercanos_dificil": [
+        "mixto",
+        "comorbilidad",
+        "envejecimiento",
+        "riesgo"
+      ],
+      "prohibidas": [
+        "Trastorno neurocognitivo leve por etiologías múltiples",
+        "trastorno",
+        "neurocognitivo",
+        "etiologias",
+        "multiples",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_138",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo A",
+      "palabra_secreta": "Trastorno de personalidad paranoide",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "suspicacia",
+        "confianza"
+      ],
+      "cercanos_medio": [
+        "suspicacia",
+        "confianza",
+        "ideas de referencia"
+      ],
+      "cercanos_dificil": [
+        "suspicacia",
+        "confianza",
+        "ideas de referencia",
+        "rigidez"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad paranoide",
+        "trastorno",
+        "personalidad",
+        "paranoide",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_139",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo A",
+      "palabra_secreta": "Trastorno de personalidad esquizoide",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "aislamiento",
+        "afecto restringido"
+      ],
+      "cercanos_medio": [
+        "aislamiento",
+        "afecto restringido",
+        "anhedonia social"
+      ],
+      "cercanos_dificil": [
+        "aislamiento",
+        "afecto restringido",
+        "anhedonia social",
+        "frialdad"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad esquizoide",
+        "trastorno",
+        "personalidad",
+        "esquizoide",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_140",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo A",
+      "palabra_secreta": "Trastorno de personalidad esquizotípica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "excentricidad",
+        "pensamiento mágico"
+      ],
+      "cercanos_medio": [
+        "excentricidad",
+        "pensamiento mágico",
+        "percepción inusual"
+      ],
+      "cercanos_dificil": [
+        "excentricidad",
+        "pensamiento mágico",
+        "percepción inusual",
+        "ansiedad social"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad esquizotípica",
+        "trastorno",
+        "personalidad",
+        "esquizotipica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_141",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo B",
+      "palabra_secreta": "Trastorno de personalidad antisocial",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "impulsividad",
+        "conducta"
+      ],
+      "cercanos_medio": [
+        "impulsividad",
+        "conducta",
+        "normas"
+      ],
+      "cercanos_dificil": [
+        "normas",
+        "impulsividad",
+        "engaño",
+        "conducta"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad antisocial",
+        "trastorno",
+        "personalidad",
+        "antisocial",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_142",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo B",
+      "palabra_secreta": "Trastorno de personalidad límite",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "inestabilidad",
+        "autolesión"
+      ],
+      "cercanos_medio": [
+        "inestabilidad",
+        "autolesión",
+        "abandono"
+      ],
+      "cercanos_dificil": [
+        "inestabilidad",
+        "vacío",
+        "autolesión",
+        "abandono"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad límite",
+        "trastorno",
+        "personalidad",
+        "limite",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_143",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo B",
+      "palabra_secreta": "Trastorno de personalidad histriónica",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "dramaticidad",
+        "búsqueda atención"
+      ],
+      "cercanos_medio": [
+        "dramaticidad",
+        "búsqueda atención",
+        "emociones"
+      ],
+      "cercanos_dificil": [
+        "dramaticidad",
+        "búsqueda atención",
+        "emociones",
+        "relaciones"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad histriónica",
+        "trastorno",
+        "personalidad",
+        "histrionica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_144",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo B",
+      "palabra_secreta": "Trastorno de personalidad narcisista",
+      "dificultad": 2,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "grandiosidad",
+        "admiración"
+      ],
+      "cercanos_medio": [
+        "grandiosidad",
+        "admiración",
+        "derecho"
+      ],
+      "cercanos_dificil": [
+        "grandiosidad",
+        "admiración",
+        "derecho",
+        "sensibilidad crítica"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad narcisista",
+        "trastorno",
+        "personalidad",
+        "narcisista",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_145",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo C",
+      "palabra_secreta": "Trastorno de personalidad evitativa",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "inhibición social",
+        "vergüenza"
+      ],
+      "cercanos_medio": [
+        "inhibición social",
+        "vergüenza",
+        "sensibilidad crítica"
+      ],
+      "cercanos_dificil": [
+        "inhibición social",
+        "vergüenza",
+        "sensibilidad crítica",
+        "evitación"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad evitativa",
+        "trastorno",
+        "personalidad",
+        "evitativa",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_146",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo C",
+      "palabra_secreta": "Trastorno de personalidad dependiente",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "sumisión",
+        "miedo a separación"
+      ],
+      "cercanos_medio": [
+        "sumisión",
+        "miedo a separación",
+        "reaseguro"
+      ],
+      "cercanos_dificil": [
+        "sumisión",
+        "miedo a separación",
+        "reaseguro",
+        "baja autonomía"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad dependiente",
+        "trastorno",
+        "personalidad",
+        "dependiente",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_147",
+      "categoria": "Personalidad",
+      "subcategoria": "Grupo C",
+      "palabra_secreta": "Trastorno de personalidad obsesivo-compulsiva",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "perfeccionismo",
+        "rigidez"
+      ],
+      "cercanos_medio": [
+        "perfeccionismo",
+        "rigidez",
+        "control"
+      ],
+      "cercanos_dificil": [
+        "perfeccionismo",
+        "rigidez",
+        "control",
+        "egosintónico"
+      ],
+      "prohibidas": [
+        "Trastorno de personalidad obsesivo-compulsiva",
+        "trastorno",
+        "personalidad",
+        "obsesivo",
+        "compulsiva",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_148",
+      "categoria": "Personalidad",
+      "subcategoria": "Secundario",
+      "palabra_secreta": "Cambio de personalidad debido a otra afección médica",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "neurológico",
+        "inicio tardío"
+      ],
+      "cercanos_medio": [
+        "neurológico",
+        "inicio tardío",
+        "frontal"
+      ],
+      "cercanos_dificil": [
+        "neurológico",
+        "inicio tardío",
+        "frontal",
+        "secundario"
+      ],
+      "prohibidas": [
+        "Cambio de personalidad debido a otra afección médica",
+        "cambio",
+        "personalidad",
+        "debido",
+        "afeccion",
+        "medica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_149",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de voyerismo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "excitación",
+        "observación"
+      ],
+      "cercanos_medio": [
+        "excitación",
+        "observación",
+        "consentimiento"
+      ],
+      "cercanos_dificil": [
+        "excitación",
+        "observación",
+        "consentimiento",
+        "legal"
+      ],
+      "prohibidas": [
+        "Trastorno de voyerismo",
+        "trastorno",
+        "voyerismo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_150",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de exhibicionismo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "exposición",
+        "impulso"
+      ],
+      "cercanos_medio": [
+        "exposición",
+        "impulso",
+        "riesgo legal"
+      ],
+      "cercanos_dificil": [
+        "exposición",
+        "impulso",
+        "riesgo legal",
+        "repetición"
+      ],
+      "prohibidas": [
+        "Trastorno de exhibicionismo",
+        "trastorno",
+        "exhibicionismo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_151",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de frotteurismo",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "contacto",
+        "impulso"
+      ],
+      "cercanos_medio": [
+        "contacto",
+        "impulso",
+        "consentimiento"
+      ],
+      "cercanos_dificil": [
+        "contacto",
+        "impulso",
+        "consentimiento",
+        "legal"
+      ],
+      "prohibidas": [
+        "Trastorno de frotteurismo",
+        "trastorno",
+        "frotteurismo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_152",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de masoquismo sexual",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fantasías",
+        "conducta"
+      ],
+      "cercanos_medio": [
+        "fantasías",
+        "conducta",
+        "malestar"
+      ],
+      "cercanos_dificil": [
+        "fantasías",
+        "conducta",
+        "malestar",
+        "seguridad"
+      ],
+      "prohibidas": [
+        "Trastorno de masoquismo sexual",
+        "trastorno",
+        "masoquismo",
+        "sexual",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_153",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno de sadismo sexual",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "fantasías",
+        "conducta"
+      ],
+      "cercanos_medio": [
+        "fantasías",
+        "conducta",
+        "malestar"
+      ],
+      "cercanos_dificil": [
+        "fantasías",
+        "conducta",
+        "malestar",
+        "seguridad"
+      ],
+      "prohibidas": [
+        "Trastorno de sadismo sexual",
+        "trastorno",
+        "sadismo",
+        "sexual",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_154",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno pedofílico",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "preferencia",
+        "protección"
+      ],
+      "cercanos_medio": [
+        "preferencia",
+        "protección",
+        "riesgo legal"
+      ],
+      "cercanos_dificil": [
+        "preferencia",
+        "protección",
+        "riesgo legal",
+        "clínico"
+      ],
+      "prohibidas": [
+        "Trastorno pedofílico",
+        "trastorno",
+        "pedofilico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_155",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno fetichista",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "excitación",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "excitación",
+        "malestar",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "objeto",
+        "excitación",
+        "malestar",
+        "funcionamiento"
+      ],
+      "prohibidas": [
+        "Trastorno fetichista",
+        "trastorno",
+        "fetichista",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_156",
+      "categoria": "Parafílicos",
+      "subcategoria": null,
+      "palabra_secreta": "Trastorno travestista",
+      "dificultad": 3,
+      "tags": [
+        "DSM5TR"
+      ],
+      "cercanos_facil": [
+        "excitación",
+        "malestar"
+      ],
+      "cercanos_medio": [
+        "excitación",
+        "malestar",
+        "funcionamiento"
+      ],
+      "cercanos_dificil": [
+        "excitación",
+        "ropa",
+        "malestar",
+        "funcionamiento"
+      ],
+      "prohibidas": [
+        "Trastorno travestista",
+        "trastorno",
+        "travestista",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_157",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Anhedonia",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "motivación",
+        "depresión"
+      ],
+      "cercanos_medio": [
+        "motivación",
+        "depresión",
+        "negativos"
+      ],
+      "cercanos_dificil": [
+        "placer",
+        "motivación",
+        "depresión",
+        "negativos"
+      ],
+      "prohibidas": [
+        "Anhedonia",
+        "anhedonia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_158",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Aplanamiento afectivo",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "expresión",
+        "prosodia"
+      ],
+      "cercanos_medio": [
+        "expresión",
+        "prosodia",
+        "negativos"
+      ],
+      "cercanos_dificil": [
+        "expresión",
+        "prosodia",
+        "negativos",
+        "embotamiento"
+      ],
+      "prohibidas": [
+        "Aplanamiento afectivo",
+        "aplanamiento",
+        "afectivo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_159",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Alogia",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "pobreza del habla",
+        "latencia"
+      ],
+      "cercanos_medio": [
+        "pobreza del habla",
+        "latencia",
+        "negativos"
+      ],
+      "cercanos_dificil": [
+        "pobreza del habla",
+        "latencia",
+        "negativos",
+        "fluidez"
+      ],
+      "prohibidas": [
+        "Alogia",
+        "alogia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_160",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Abulia",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "iniciativa",
+        "frontal"
+      ],
+      "cercanos_medio": [
+        "iniciativa",
+        "frontal",
+        "motivación"
+      ],
+      "cercanos_dificil": [
+        "iniciativa",
+        "apatía",
+        "frontal",
+        "motivación"
+      ],
+      "prohibidas": [
+        "Abulia",
+        "abulia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_161",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Ideas de referencia",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "autorreferencia",
+        "paranoia"
+      ],
+      "cercanos_medio": [
+        "autorreferencia",
+        "paranoia",
+        "significado"
+      ],
+      "cercanos_dificil": [
+        "autorreferencia",
+        "medios",
+        "paranoia",
+        "significado"
+      ],
+      "prohibidas": [
+        "Ideas de referencia",
+        "ideas",
+        "referencia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_162",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Delirio de persecución",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "vigilancia",
+        "complot"
+      ],
+      "cercanos_medio": [
+        "vigilancia",
+        "complot",
+        "sospecha"
+      ],
+      "cercanos_dificil": [
+        "daño",
+        "vigilancia",
+        "complot",
+        "sospecha"
+      ],
+      "prohibidas": [
+        "Delirio de persecución",
+        "delirio",
+        "persecucion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_163",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Fuga de ideas",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "verborrea",
+        "asociaciones"
+      ],
+      "cercanos_medio": [
+        "verborrea",
+        "asociaciones",
+        "aceleración"
+      ],
+      "cercanos_dificil": [
+        "manía",
+        "verborrea",
+        "asociaciones",
+        "aceleración"
+      ],
+      "prohibidas": [
+        "Fuga de ideas",
+        "ideas",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_164",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Pensamiento tangencial",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "meta perdida",
+        "discurso"
+      ],
+      "cercanos_medio": [
+        "meta perdida",
+        "discurso",
+        "desorganización"
+      ],
+      "cercanos_dificil": [
+        "rodeos",
+        "meta perdida",
+        "discurso",
+        "desorganización"
+      ],
+      "prohibidas": [
+        "Pensamiento tangencial",
+        "pensamiento",
+        "tangencial",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_165",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Bloqueo del pensamiento",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "interrupción",
+        "latencia"
+      ],
+      "cercanos_medio": [
+        "interrupción",
+        "latencia",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "interrupción",
+        "latencia",
+        "ansiedad",
+        "psicosis"
+      ],
+      "prohibidas": [
+        "Bloqueo del pensamiento",
+        "bloqueo",
+        "pensamiento",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_166",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Alucinación auditiva",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "imperativas",
+        "tercera persona"
+      ],
+      "cercanos_medio": [
+        "imperativas",
+        "tercera persona",
+        "psicosis"
+      ],
+      "cercanos_dificil": [
+        "voces",
+        "imperativas",
+        "tercera persona",
+        "psicosis"
+      ],
+      "prohibidas": [
+        "Alucinación auditiva",
+        "alucinacion",
+        "auditiva",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_167",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Despersonalización",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "extrañeza del yo",
+        "disociación"
+      ],
+      "cercanos_medio": [
+        "extrañeza del yo",
+        "disociación",
+        "ansiedad"
+      ],
+      "cercanos_dificil": [
+        "extrañeza del yo",
+        "disociación",
+        "ansiedad",
+        "observador"
+      ],
+      "prohibidas": [
+        "Despersonalización",
+        "despersonalizacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_168",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Desrealización",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "irrealidad",
+        "disociación"
+      ],
+      "cercanos_medio": [
+        "irrealidad",
+        "disociación",
+        "como sueño"
+      ],
+      "cercanos_dificil": [
+        "irrealidad",
+        "disociación",
+        "pánico",
+        "como sueño"
+      ],
+      "prohibidas": [
+        "Desrealización",
+        "desrealizacion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_169",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Insight",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "juicio de realidad",
+        "conciencia de enfermedad"
+      ],
+      "cercanos_medio": [
+        "juicio de realidad",
+        "conciencia de enfermedad",
+        "adherencia"
+      ],
+      "cercanos_dificil": [
+        "juicio de realidad",
+        "conciencia de enfermedad",
+        "adherencia",
+        "psicosis"
+      ],
+      "prohibidas": [
+        "Insight",
+        "insight",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_170",
+      "categoria": "Semiología",
+      "subcategoria": null,
+      "palabra_secreta": "Ideación suicida",
+      "dificultad": 2,
+      "tags": [
+        "psicopatología"
+      ],
+      "cercanos_facil": [
+        "intención",
+        "protección"
+      ],
+      "cercanos_medio": [
+        "intención",
+        "protección",
+        "riesgo"
+      ],
+      "cercanos_dificil": [
+        "riesgo",
+        "plan",
+        "intención",
+        "protección"
+      ],
+      "prohibidas": [
+        "Ideación suicida",
+        "ideacion",
+        "suicida",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_171",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Clozapina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "agranulocitosis",
+        "refractariedad"
+      ],
+      "cercanos_medio": [
+        "agranulocitosis",
+        "refractariedad",
+        "sialorrea"
+      ],
+      "cercanos_dificil": [
+        "agranulocitosis",
+        "refractariedad",
+        "sialorrea",
+        "miocarditis"
+      ],
+      "prohibidas": [
+        "Clozapina",
+        "clozapina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_172",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Haloperidol",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "agitación",
+        "EPS"
+      ],
+      "cercanos_medio": [
+        "agitación",
+        "EPS",
+        "QT"
+      ],
+      "cercanos_dificil": [
+        "D2 potente",
+        "EPS",
+        "QT",
+        "agitación"
+      ],
+      "prohibidas": [
+        "Haloperidol",
+        "haloperidol",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_173",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Olanzapina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "aumento de peso",
+        "sedación"
+      ],
+      "cercanos_medio": [
+        "aumento de peso",
+        "sedación",
+        "metabólico"
+      ],
+      "cercanos_dificil": [
+        "aumento de peso",
+        "sedación",
+        "metabólico",
+        "atípico"
+      ],
+      "prohibidas": [
+        "Olanzapina",
+        "olanzapina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_174",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Risperidona",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "prolactina",
+        "atípico"
+      ],
+      "cercanos_medio": [
+        "prolactina",
+        "atípico",
+        "EPS"
+      ],
+      "cercanos_dificil": [
+        "prolactina",
+        "EPS",
+        "dosis",
+        "atípico"
+      ],
+      "prohibidas": [
+        "Risperidona",
+        "risperidona",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_175",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Quetiapina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "sedación",
+        "bipolar"
+      ],
+      "cercanos_medio": [
+        "sedación",
+        "bipolar",
+        "hipotensión"
+      ],
+      "cercanos_dificil": [
+        "H1",
+        "sedación",
+        "bipolar",
+        "hipotensión"
+      ],
+      "prohibidas": [
+        "Quetiapina",
+        "quetiapina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_176",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Aripiprazol",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "agonista parcial",
+        "acatisia"
+      ],
+      "cercanos_medio": [
+        "agonista parcial",
+        "acatisia",
+        "prolactina baja"
+      ],
+      "cercanos_dificil": [
+        "agonista parcial",
+        "acatisia",
+        "prolactina baja",
+        "D2"
+      ],
+      "prohibidas": [
+        "Aripiprazol",
+        "aripiprazol",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_177",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Litio",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "niveles",
+        "temblor"
+      ],
+      "cercanos_medio": [
+        "niveles",
+        "temblor",
+        "tiroides"
+      ],
+      "cercanos_dificil": [
+        "niveles",
+        "temblor",
+        "tiroides",
+        "toxicidad"
+      ],
+      "prohibidas": [
+        "Litio",
+        "litio",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_178",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Valproato",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "teratogenicidad",
+        "aumento de peso"
+      ],
+      "cercanos_medio": [
+        "teratogenicidad",
+        "aumento de peso",
+        "hígado"
+      ],
+      "cercanos_dificil": [
+        "hígado",
+        "teratogenicidad",
+        "aumento de peso",
+        "manía"
+      ],
+      "prohibidas": [
+        "Valproato",
+        "valproato",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_179",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Lamotrigina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "titulación lenta",
+        "bipolar II"
+      ],
+      "cercanos_medio": [
+        "titulación lenta",
+        "bipolar II",
+        "depresión"
+      ],
+      "cercanos_dificil": [
+        "rash",
+        "titulación lenta",
+        "bipolar II",
+        "depresión"
+      ],
+      "prohibidas": [
+        "Lamotrigina",
+        "lamotrigina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_180",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Sertralina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "disfunción sexual",
+        "ansiedad"
+      ],
+      "cercanos_medio": [
+        "disfunción sexual",
+        "ansiedad",
+        "ISRS"
+      ],
+      "cercanos_dificil": [
+        "ISRS",
+        "disfunción sexual",
+        "ansiedad",
+        "CYP"
+      ],
+      "prohibidas": [
+        "Sertralina",
+        "sertralina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_181",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Venlafaxina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "hipertensión",
+        "retirada"
+      ],
+      "cercanos_medio": [
+        "hipertensión",
+        "retirada",
+        "dosis"
+      ],
+      "cercanos_dificil": [
+        "SNRI",
+        "hipertensión",
+        "retirada",
+        "dosis"
+      ],
+      "prohibidas": [
+        "Venlafaxina",
+        "venlafaxina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_182",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Bupropión",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "convulsiones",
+        "activación"
+      ],
+      "cercanos_medio": [
+        "convulsiones",
+        "activación",
+        "NA/DA"
+      ],
+      "cercanos_dificil": [
+        "NA/DA",
+        "convulsiones",
+        "tabaco",
+        "activación"
+      ],
+      "prohibidas": [
+        "Bupropión",
+        "bupropion",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_183",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Mirtazapina",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "apetito",
+        "sedación"
+      ],
+      "cercanos_medio": [
+        "apetito",
+        "sedación",
+        "NaSSA"
+      ],
+      "cercanos_dificil": [
+        "NaSSA",
+        "apetito",
+        "sedación",
+        "H1"
+      ],
+      "prohibidas": [
+        "Mirtazapina",
+        "mirtazapina",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_184",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Propranolol",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "acatisia",
+        "temblor"
+      ],
+      "cercanos_medio": [
+        "acatisia",
+        "temblor",
+        "beta bloqueador"
+      ],
+      "cercanos_dificil": [
+        "acatisia",
+        "temblor",
+        "beta bloqueador",
+        "ansiedad"
+      ],
+      "prohibidas": [
+        "Propranolol",
+        "propranolol",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_185",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Biperideno",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "anticolinérgico",
+        "boca seca"
+      ],
+      "cercanos_medio": [
+        "anticolinérgico",
+        "boca seca",
+        "confusión"
+      ],
+      "cercanos_dificil": [
+        "EPS",
+        "anticolinérgico",
+        "boca seca",
+        "confusión"
+      ],
+      "prohibidas": [
+        "Biperideno",
+        "biperideno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_186",
+      "categoria": "Psicofarmacología",
+      "subcategoria": null,
+      "palabra_secreta": "Lorazepam",
+      "dificultad": 2,
+      "tags": [
+        "farmacología"
+      ],
+      "cercanos_facil": [
+        "catatonía",
+        "ansiedad"
+      ],
+      "cercanos_medio": [
+        "catatonía",
+        "ansiedad",
+        "abstinencia"
+      ],
+      "cercanos_dificil": [
+        "catatonía",
+        "ansiedad",
+        "abstinencia",
+        "sedación"
+      ],
+      "prohibidas": [
+        "Lorazepam",
+        "lorazepam",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_187",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Síndrome neuroléptico maligno",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "rigidez",
+        "hipertermia"
+      ],
+      "cercanos_medio": [
+        "rigidez",
+        "hipertermia",
+        "CPK"
+      ],
+      "cercanos_dificil": [
+        "rigidez",
+        "hipertermia",
+        "CPK",
+        "D2"
+      ],
+      "prohibidas": [
+        "Síndrome neuroléptico maligno",
+        "sindrome",
+        "neuroleptico",
+        "maligno",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_188",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Síndrome serotoninérgico",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "hiperreflexia",
+        "linezolid"
+      ],
+      "cercanos_medio": [
+        "hiperreflexia",
+        "linezolid",
+        "clonus"
+      ],
+      "cercanos_dificil": [
+        "clonus",
+        "hiperreflexia",
+        "ISRS",
+        "linezolid"
+      ],
+      "prohibidas": [
+        "Síndrome serotoninérgico",
+        "sindrome",
+        "serotoninergico",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_189",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Acatisia",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "inquietud",
+        "neuroléptico"
+      ],
+      "cercanos_medio": [
+        "inquietud",
+        "neuroléptico",
+        "propranolol"
+      ],
+      "cercanos_dificil": [
+        "inquietud",
+        "neuroléptico",
+        "propranolol",
+        "diferencial ansiedad"
+      ],
+      "prohibidas": [
+        "Acatisia",
+        "acatisia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_190",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Distonía aguda",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "crisis oculógira",
+        "tortícolis"
+      ],
+      "cercanos_medio": [
+        "crisis oculógira",
+        "tortícolis",
+        "anticolinérgico"
+      ],
+      "cercanos_dificil": [
+        "crisis oculógira",
+        "tortícolis",
+        "anticolinérgico",
+        "antipsicótico"
+      ],
+      "prohibidas": [
+        "Distonía aguda",
+        "distonia",
+        "aguda",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_191",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Discinesia tardía",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "movimientos orofaciales",
+        "crónico"
+      ],
+      "cercanos_medio": [
+        "movimientos orofaciales",
+        "crónico",
+        "antipsicótico"
+      ],
+      "cercanos_dificil": [
+        "movimientos orofaciales",
+        "crónico",
+        "VMAT2",
+        "antipsicótico"
+      ],
+      "prohibidas": [
+        "Discinesia tardía",
+        "discinesia",
+        "tardia",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_192",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Intoxicación anticolinérgica",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "midriasis",
+        "piel seca"
+      ],
+      "cercanos_medio": [
+        "midriasis",
+        "piel seca",
+        "delirium"
+      ],
+      "cercanos_dificil": [
+        "midriasis",
+        "piel seca",
+        "delirium",
+        "retención urinaria"
+      ],
+      "prohibidas": [
+        "Intoxicación anticolinérgica",
+        "intoxicacion",
+        "anticolinergica",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_193",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Abstinencia de alcohol",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "temblor",
+        "diaforesis"
+      ],
+      "cercanos_medio": [
+        "temblor",
+        "diaforesis",
+        "convulsiones"
+      ],
+      "cercanos_dificil": [
+        "temblor",
+        "diaforesis",
+        "convulsiones",
+        "delirium tremens"
+      ],
+      "prohibidas": [
+        "Abstinencia de alcohol",
+        "abstinencia",
+        "alcohol",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_194",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Intoxicación por estimulantes",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "taquicardia",
+        "paranoia"
+      ],
+      "cercanos_medio": [
+        "taquicardia",
+        "paranoia",
+        "agitación"
+      ],
+      "cercanos_dificil": [
+        "taquicardia",
+        "paranoia",
+        "agitación",
+        "hipertermia"
+      ],
+      "prohibidas": [
+        "Intoxicación por estimulantes",
+        "intoxicacion",
+        "estimulantes",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_195",
+      "categoria": "Urgencias",
+      "subcategoria": null,
+      "palabra_secreta": "Intoxicación por opioides",
+      "dificultad": 2,
+      "tags": [
+        "urgencias"
+      ],
+      "cercanos_facil": [
+        "depresión respiratoria",
+        "naloxona"
+      ],
+      "cercanos_medio": [
+        "depresión respiratoria",
+        "naloxona",
+        "somnolencia"
+      ],
+      "cercanos_dificil": [
+        "miosis",
+        "depresión respiratoria",
+        "naloxona",
+        "somnolencia"
+      ],
+      "prohibidas": [
+        "Intoxicación por opioides",
+        "intoxicacion",
+        "opioides",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_196",
+      "categoria": "Neuroanatomía",
+      "subcategoria": null,
+      "palabra_secreta": "Amígdala",
+      "dificultad": 2,
+      "tags": [
+        "neuro"
+      ],
+      "cercanos_facil": [
+        "amenaza",
+        "límbico"
+      ],
+      "cercanos_medio": [
+        "amenaza",
+        "límbico",
+        "emoción"
+      ],
+      "cercanos_dificil": [
+        "miedo",
+        "amenaza",
+        "límbico",
+        "emoción"
+      ],
+      "prohibidas": [
+        "Amígdala",
+        "amigdala",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_197",
+      "categoria": "Neuroanatomía",
+      "subcategoria": null,
+      "palabra_secreta": "Hipocampo",
+      "dificultad": 2,
+      "tags": [
+        "neuro"
+      ],
+      "cercanos_facil": [
+        "memoria",
+        "consolidación"
+      ],
+      "cercanos_medio": [
+        "memoria",
+        "consolidación",
+        "contexto"
+      ],
+      "cercanos_dificil": [
+        "memoria",
+        "estrés",
+        "consolidación",
+        "contexto"
+      ],
+      "prohibidas": [
+        "Hipocampo",
+        "hipocampo",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_198",
+      "categoria": "Neuroanatomía",
+      "subcategoria": null,
+      "palabra_secreta": "Corteza prefrontal dorsolateral",
+      "dificultad": 2,
+      "tags": [
+        "neuro"
+      ],
+      "cercanos_facil": [
+        "executivo",
+        "working memory"
+      ],
+      "cercanos_medio": [
+        "executivo",
+        "working memory",
+        "control"
+      ],
+      "cercanos_dificil": [
+        "executivo",
+        "working memory",
+        "control",
+        "TDAH"
+      ],
+      "prohibidas": [
+        "Corteza prefrontal dorsolateral",
+        "corteza",
+        "prefrontal",
+        "dorsolateral",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_199",
+      "categoria": "Neuroanatomía",
+      "subcategoria": null,
+      "palabra_secreta": "Corteza orbitofrontal",
+      "dificultad": 2,
+      "tags": [
+        "neuro"
+      ],
+      "cercanos_facil": [
+        "recompensa",
+        "decisiones"
+      ],
+      "cercanos_medio": [
+        "recompensa",
+        "decisiones",
+        "impulsividad"
+      ],
+      "cercanos_dificil": [
+        "recompensa",
+        "decisiones",
+        "impulsividad",
+        "inhibición"
+      ],
+      "prohibidas": [
+        "Corteza orbitofrontal",
+        "corteza",
+        "orbitofrontal",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    },
+    {
+      "id": "IMP_200",
+      "categoria": "Neuroanatomía",
+      "subcategoria": null,
+      "palabra_secreta": "Cingulado anterior",
+      "dificultad": 2,
+      "tags": [
+        "neuro"
+      ],
+      "cercanos_facil": [
+        "conflicto",
+        "control"
+      ],
+      "cercanos_medio": [
+        "conflicto",
+        "control",
+        "dolor social"
+      ],
+      "cercanos_dificil": [
+        "conflicto",
+        "error",
+        "control",
+        "dolor social"
+      ],
+      "prohibidas": [
+        "Cingulado anterior",
+        "cingulado",
+        "anterior",
+        "dsm",
+        "dsm-5",
+        "dsm5",
+        "criterios",
+        "diagnostico",
+        "diagnóstico"
+      ],
+      "peso_categoria": 1.0
+    }
+  ]
+}

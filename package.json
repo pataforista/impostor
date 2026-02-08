@@ -1,0 +1,15 @@
+{
+  "name": "impostor-word-game",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Word-based impostor game engine",
+  "main": "impostor-word-engine.ts",
+  "scripts": {
+    "test": "tsx example.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
