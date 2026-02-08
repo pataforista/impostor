@@ -53,6 +53,14 @@ function normalizeForFilename(str) {
         .replace(/[^\w]/g, "");
 }
 
+function updateBackground(category) {
+    const bgOverlay = document.querySelector('.bg-overlay');
+    if (!bgOverlay) return;
+    const filename = normalizeForFilename(category);
+    bgOverlay.style.backgroundImage = `url('assets/categories/${filename}.jpg')`;
+    bgOverlay.style.opacity = '0.3';
+}
+
 // 1. Load Dataset & Populate Categories
 async function init() {
     audio.init();
@@ -69,6 +77,12 @@ async function init() {
             pill.dataset.category = cat;
             pill.addEventListener('click', () => {
                 pill.classList.toggle('active');
+                if (pill.classList.contains('active')) {
+                    updateBackground(cat);
+                }
+            });
+            pill.addEventListener('mouseenter', () => {
+                updateBackground(cat);
             });
             categoryPillsContainer.appendChild(pill);
         });
@@ -151,6 +165,11 @@ function showDistributionPrompt() {
     targetPlayerName.textContent = player.name;
     distributionPrompt.classList.remove('hidden');
     revealCardArea.classList.add('hidden');
+
+    // Immersion: Show category art during handover
+    if (state.secret && state.secret.category) {
+        updateBackground(state.secret.category);
+    }
 }
 
 readyToSeeBtn.addEventListener('click', () => {
@@ -189,10 +208,10 @@ function showGameScreen() {
     const state = engine.getState();
     gameCategoryName.textContent = state.secret.category || "General";
 
-    if (state.secret.category) {
-        const filename = normalizeForFilename(state.secret.category);
-        categoryBanner.style.backgroundImage = `url('assets/categories/${filename}.jpg')`;
-    }
+    // Privacy: Neutral background during debate
+    const bgOverlay = document.querySelector('.bg-overlay');
+    if (bgOverlay) bgOverlay.style.opacity = '0';
+    if (categoryBanner) categoryBanner.style.backgroundImage = 'none';
 
     switchScreen('game');
 }
