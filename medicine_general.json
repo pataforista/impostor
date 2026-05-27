@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "name": "Medicina General",
+    "version": "v1.0",
+    "language": "es",
+    "n_cards": 30,
+    "fields": ["id", "categoria", "palabra_secreta", "prohibidas", "dificultad", "tags", "cercanos_facil", "cercanos_medio", "cercanos_dificil"],
+    "notes": "Términos médicos generales: cardiología, neumología, gastroenterología, endocrinología, etc."
+  },
+  "cards": [
+    {
+      "id": "MED_001",
+      "categoria": "Cardiología",
+      "palabra_secreta": "Infarto agudo de miocardio",
+      "dificultad": 2,
+      "tags": ["cardiologia", "urgencias"],
+      "cercanos_facil": ["dolor torácico", "corazón"],
+      "cercanos_medio": ["IAM", "troponina", "ECG"],
+      "cercanos_dificil": ["oclusión coronaria", "necrosis miocárdica", "ST elevado"],
+      "prohibidas": ["infarto", "miocardio", "corazón", "ataque cardíaco", "IAM"]
+    },
+    {
+      "id": "MED_002",
+      "categoria": "Cardiología",
+      "palabra_secreta": "Fibrilación auricular",
+      "dificultad": 2,
+      "tags": ["cardiologia", "arritmia"],
+      "cercanos_facil": ["palpitaciones", "latido irregular"],
+      "cercanos_medio": ["ECG", "anticoagulación", "CHA2DS2-VASc"],
+      "cercanos_dificil": ["cardioembolia", "ablación", "isquemia cerebral"],
+      "prohibidas": ["fibrilación", "auricular", "arritmia", "FA", "aleteo"]
+    },
+    {
+      "id": "MED_003",
+      "categoria": "Neumología",
+      "palabra_secreta": "Enfermedad pulmonar obstructiva crónica",
+      "dificultad": 2,
+      "tags": ["neumologia", "respiratorio"],
+      "cercanos_facil": ["disnea", "tos crónica"],
+      "cercanos_medio": ["EPOC", "espirometría", "broncodilatador"],
+      "cercanos_dificil": ["alveolar", "hiperinsuflación", "cor pulmonale"],
+      "prohibidas": ["EPOC", "pulmonar", "obstructiva", "crónica", "bronquitis enfisema"]
+    },
+    {
+      "id": "MED_004",
+      "categoria": "Neumología",
+      "palabra_secreta": "Asma bronquial",
+      "dificultad": 1,
+      "tags": ["neumologia"],
+      "cercanos_facil": ["sibilancia", "dificultad respirar"],
+      "cercanos_medio": ["corticoides inhalados", "broncospasmo", "alérgeno"],
+      "cercanos_dificil": ["remodelación vía aérea", "eosinafilos", "prueba metacolina"],
+      "prohibidas": ["asma", "bronquial", "sibilancia", "broncodilatador"]
+    },
+    {
+      "id": "MED_005",
+      "categoria": "Gastroenterología",
+      "palabra_secreta": "Enfermedad por reflujo gastroesofágico",
+      "dificultad": 2,
+      "tags": ["gastro"],
+      "cercanos_facil": ["acidez", "pirosis"],
+      "cercanos_medio": ["ERGE", "esófago de Barrett", "inhibidores bomba protones"],
+      "cercanos_dificil": ["hernia hiatal", "pHmetría", "esofagitis péptica"],
+      "prohibidas": ["reflujo", "gastroesofágico", "ERGE", "acidez", "pirosis"]
+    },
+    {
+      "id": "MED_006",
+      "categoria": "Gastroenterología",
+      "palabra_secreta": "Úlcera péptica",
+      "dificultad": 1,
+      "tags": ["gastro"],
+      "cercanos_facil": ["dolor epigástrico", "sangrado digestivo"],
+      "cercanos_medio": ["Helicobacter pylori", "AINES", "melena"],
+      "cercanos_dificil": ["perforación", "penetración", "estenosis pilórica"],
+      "prohibidas": ["úlcera", "péptica", "duodenal", "gástrica", "Helicobacter"]
+    },
+    {
+      "id": "MED_007",
+      "categoria": "Endocrinología",
+      "palabra_secreta": "Diabetes mellitus tipo 2",
+      "dificultad": 1,
+      "tags": ["endocrino", "metabolismo"],
+      "cercanos_facil": ["azúcar alta", "insulina"],
+      "cercanos_medio": ["metformina", "resistencia insulina", "HbA1c"],
+      "cercanos_dificil": ["glucotoxicidad", "incretinas", "SGLT2"],
+      "prohibidas": ["diabetes", "mellitus", "tipo 2", "azúcar", "glucosa"]
+    },
+    {
+      "id": "MED_008",
+      "categoria": "Endocrinología",
+      "palabra_secreta": "Hipotiroidismo",
+      "dificultad": 1,
+      "tags": ["endocrino"],
+      "cercanos_facil": ["cansancio", "aumento peso"],
+      "cercanos_medio": ["TSH", "levotiroxina", "mixedema"],
+      "cercanos_dificil": ["tiroiditis de Hashimoto", "bocio", "hormona tiroidea"],
+      "prohibidas": ["hipotiroidismo", "tiroides", "TSH", "levotiroxina"]
+    },
+    {
+      "id": "MED_009",
+      "categoria": "Nefrología",
+      "palabra_secreta": "Insuficiencia renal crónica",
+      "dificultad": 2,
+      "tags": ["nefrologia"],
+      "cercanos_facil": ["riñón", "diálisis"],
+      "cercanos_medio": ["IRC", "filtrado glomerular", "creatinina"],
+      "cercanos_dificil": ["uremia", "hiperparatiroidismo secundario", "anemia nefrógena"],
+      "prohibidas": ["insuficiencia", "renal", "crónica", "diálisis", "IRC"]
+    },
+    {
+      "id": "MED_010",
+      "categoria": "Nefrología",
+      "palabra_secreta": "Infección urinaria",
+      "dificultad": 1,
+      "tags": ["nefrologia", "infeccion"],
+      "cercanos_facil": ["ardor al orinar", "micción frecuente"],
+      "cercanos_medio": ["urocultivo", "cistitis", "pielonefritis"],
+      "cercanos_dificil": ["bacteriuria asintomática", "escayola leucocitaria", "nitritos"],
+      "prohibidas": ["infección", "urinaria", "cistitis", "orina", "E.coli"]
+    },
+    {
+      "id": "MED_011",
+      "categoria": "Neurología",
+      "palabra_secreta": "Accidente cerebrovascular",
+      "dificultad": 2,
+      "tags": ["neurologia", "urgencias"],
+      "cercanos_facil": ["parálisis", "habla dificultad"],
+      "cercanos_medio": ["ACV", "ictus", "trombolisis"],
+      "cercanos_dificil": ["penumbra isquémica", "FA cardioembólica", "escala NIHSS"],
+      "prohibidas": ["ACV", "ictus", "cerebrovascular", "accidente", "embolia"]
+    },
+    {
+      "id": "MED_012",
+      "categoria": "Neurología",
+      "palabra_secreta": "Migraña",
+      "dificultad": 1,
+      "tags": ["neurologia"],
+      "cercanos_facil": ["dolor cabeza", "aura"],
+      "cercanos_medio": ["triptanes", "fotofobia", "náuseas"],
+      "cercanos_dificil": ["crisis migrañosa", "prevención propanolol", "visual snow"],
+      "prohibidas": ["migraña", "jaqueca", "cefalea", "aura"]
+    },
+    {
+      "id": "MED_013",
+      "categoria": "Infectología",
+      "palabra_secreta": "Neumonía adquirida en la comunidad",
+      "dificultad": 2,
+      "tags": ["infeccion", "respiratorio"],
+      "cercanos_facil": ["fiebre", "tos productiva"],
+      "cercanos_medio": ["radiografía tórax", "antibiótico", "Streptococcus pneumoniae"],
+      "cercanos_dificil": ["consolidación", "derrame pleural", "CURB-65"],
+      "prohibidas": ["neumonía", "comunidad", "NAC", "infección pulmonar"]
+    },
+    {
+      "id": "MED_014",
+      "categoria": "Infectología",
+      "palabra_secreta": "Sepsis",
+      "dificultad": 2,
+      "tags": ["infeccion", "urgencias"],
+      "cercanos_facil": ["infección grave", "hipotensión"],
+      "cercanos_medio": ["qSOFA", "lactato", "reanimación"],
+      "cercanos_dificil": ["disfunción orgánica", "choque séptico", "vasopresores"],
+      "prohibidas": ["sepsis", "septicemia", "bacteriemia", "choque séptico"]
+    },
+    {
+      "id": "MED_015",
+      "categoria": "Hematología",
+      "palabra_secreta": "Anemia ferropénica",
+      "dificultad": 2,
+      "tags": ["hematologia"],
+      "cercanos_facil": ["cansancio", "falta hierro"],
+      "cercanos_medio": ["ferritina baja", "microcitosis", "suplemento hierro"],
+      "cercanos_dificil": ["sideropenia", "pica", "índice de saturación transferrina"],
+      "prohibidas": ["anemia", "ferropénica", "hierro", "ferritina", "hemoglobina baja"]
+    },
+    {
+      "id": "MED_016",
+      "categoria": "Reumatología",
+      "palabra_secreta": "Artritis reumatoide",
+      "dificultad": 2,
+      "tags": ["reumatologia"],
+      "cercanos_facil": ["dolor articulaciones", "rigidez matutina"],
+      "cercanos_medio": ["factor reumatoide", "anti-CCP", "metotrexato"],
+      "cercanos_dificil": ["sinovitis", "deformidad en cuello cisne", "nódulos reumatoides"],
+      "prohibidas": ["artritis", "reumatoide", "AR", "inflamación articulaciones"]
+    },
+    {
+      "id": "MED_017",
+      "categoria": "Oncología",
+      "palabra_secreta": "Cáncer de mama",
+      "dificultad": 1,
+      "tags": ["oncologia"],
+      "cercanos_facil": ["masa", "mujer"],
+      "cercanos_medio": ["mamografía", "HER2", "tamoxifeno"],
+      "cercanos_dificil": ["receptores hormonales", "BRCA1", "linfocentinela"],
+      "prohibidas": ["cáncer", "mama", "neoplasia", "tumor", "mastografía"]
+    },
+    {
+      "id": "MED_018",
+      "categoria": "Oncología",
+      "palabra_secreta": "Leucemia linfoblástica aguda",
+      "dificultad": 3,
+      "tags": ["oncologia", "hematologia"],
+      "cercanos_facil": ["cáncer sangre", "niños"],
+      "cercanos_medio": ["LLA", "blastos", "quimioterapia"],
+      "cercanos_dificil": ["translocación cromosómica", "precursores linfoides", "L3"],
+      "prohibidas": ["leucemia", "linfoblástica", "aguda", "LLA", "sangre"]
+    },
+    {
+      "id": "MED_019",
+      "categoria": "Medicina de Urgencias",
+      "palabra_secreta": "Politraumatismo",
+      "dificultad": 2,
+      "tags": ["urgencias"],
+      "cercanos_facil": ["accidente", "múltiples lesiones"],
+      "cercanos_medio": ["ATLS", "trauma grave", "hemorragia"],
+      "cercanos_dificil": ["escore ISS", "torax inestable", "laparotomía exploradora"],
+      "prohibidas": ["politraumatismo", "trauma múltiple", "accidente grave", "lesiones"]
+    },
+    {
+      "id": "MED_020",
+      "categoria": "Medicina de Urgencias",
+      "palabra_secreta": "Shock hipovolémico",
+      "dificultad": 2,
+      "tags": ["urgencias"],
+      "cercanos_facil": ["hemorragia", "presión baja"],
+      "cercanos_medio": ["reposición líquidos", "taquicardia", "oliguria"],
+      "cercanos_dificil": ["índice de choque", "presión venosa central", "expansores plasmáticos"],
+      "prohibidas": ["shock", "hipovolémico", "hemorragia", "choque", "volumen"]
+    },
+    {
+      "id": "MED_021",
+      "categoria": "Farmacología Clínica",
+      "palabra_secreta": "Síndrome de Stevens-Johnson",
+      "dificultad": 3,
+      "tags": ["farmacologia", "urgencias"],
+      "cercanos_facil": ["reacción medicamento", "ampollas piel"],
+      "cercanos_medio": ["Necrólisis epidérmica tóxica", "fármacos antiepilépticos", "alopurinol"],
+      "cercanos_dificil": ["desprendimiento epidérmico", "signo de Nikolsky", "corticoides"],
+      "prohibidas": ["Stevens-Johnson", "necrólisis", "ampollas", "reacción fármaco"]
+    },
+    {
+      "id": "MED_022",
+      "categoria": "Oftalmología",
+      "palabra_secreta": "Glaucoma de ángulo abierto",
+      "dificultad": 2,
+      "tags": ["oftalmologia"],
+      "cercanos_facil": ["presión ocular", "ceguera"],
+      "cercanos_medio": ["campo visual", "fondo de ojo", "betabloqueante"],
+      "cercanos_dificil": ["excavación papilar", "trabeculoplastia", "perdida fibras nerviosas"],
+      "prohibidas": ["glaucoma", "ángulo abierto", "presión intraocular", "oftalmología"]
+    },
+    {
+      "id": "MED_023",
+      "categoria": "Dermatología",
+      "palabra_secreta": "Melanoma maligno",
+      "dificultad": 2,
+      "tags": ["dermatologia", "oncologia"],
+      "cercanos_facil": ["lunar", "cáncer piel"],
+      "cercanos_medio": ["ABCDE", "metástasis", "exéresis"],
+      "cercanos_dificil": ["inmunoterapia", "BRAF", "ganglio centinela"],
+      "prohibidas": ["melanoma", "maligno", "cáncer piel", "lunar", "nevus"]
+    },
+    {
+      "id": "MED_024",
+      "categoria": "Ginecología y Obstetricia",
+      "palabra_secreta": "Preeclampsia",
+      "dificultad": 2,
+      "tags": ["obstetricia"],
+      "cercanos_facil": ["embarazo", "presión arterial alta"],
+      "cercanos_medio": ["proteinuria", "edema", "sulfato magnesio"],
+      "cercanos_dificil": ["HELLP", "eclampsia", "restricción crecimiento intrauterino"],
+      "prohibidas": ["preeclampsia", "embarazo", "hipertensión gestacional", "toxemia"]
+    },
+    {
+      "id": "MED_025",
+      "categoria": "Urología",
+      "palabra_secreta": "Hiperplasia prostática benigna",
+      "dificultad": 2,
+      "tags": ["urologia"],
+      "cercanos_facil": ["orinar frecuente", "hombre mayor"],
+      "cercanos_medio": ["HPB", "PSA", "alfabloqueante"],
+      "cercanos_dificil": ["residuo postmiccional", "RTU prostatectomía", "infección urinaria recurrente"],
+      "prohibidas": ["hiperplasia", "prostática", "benigna", "HPB", "próstata"]
+    },
+    {
+      "id": "MED_026",
+      "categoria": "Medicina Interna",
+      "palabra_secreta": "Lupus eritematoso sistémico",
+      "dificultad": 3,
+      "tags": ["autoimmune"],
+      "cercanos_facil": ["enfermedad autoinmune", "rash facial"],
+      "cercanos_medio": ["ANA", "criterios ACR", "nefritis lúpica"],
+      "cercanos_dificil": ["anticuerpos anti-DNA", "vasculitis", "fotosensibilidad"],
+      "prohibidas": ["lupus", "eritematoso", "sistémico", "LES", "autoinmune"]
+    },
+    {
+      "id": "MED_027",
+      "categoria": "Medicina del Trabajo",
+      "palabra_secreta": "Síndrome de burnout",
+      "dificultad": 2,
+      "tags": ["salud laboral"],
+      "cercanos_facil": ["estrés laboral", "agotamiento"],
+      "cercanos_medio": ["despersonalización", "MBI", "prevención"],
+      "cercanos_dificil": ["cinismo", "ineficacia profesional", "estresores crónicos"],
+      "prohibidas": ["burnout", "desgaste", "estrés trabajo", "agotamiento laboral"]
+    },
+    {
+      "id": "MED_028",
+      "categoria": "Genética Médica",
+      "palabra_secreta": "Síndrome de Down",
+      "dificultad": 1,
+      "tags": ["genetica"],
+      "cercanos_facil": ["trisomía 21", "discapacidad intelectual"],
+      "cercanos_medio": ["cariotipo", "cardiopatía congénita", "riesgo edad materna"],
+      "cercanos_dificil": ["translocación robertsoniana", "mosaicismo", "screening combinado"],
+      "prohibidas": ["Down", "trisomía 21", "síndrome", "mongolismo"]
+    },
+    {
+      "id": "MED_029",
+      "categoria": "Salud Pública",
+      "palabra_secreta": "Pandemia",
+      "dificultad": 1,
+      "tags": ["epidemiologia"],
+      "cercanos_facil": ["enfermedad mundial", "contagio masivo"],
+      "cercanos_medio": ["distanciamiento social", "vacuna", "confinamiento"],
+      "cercanos_dificil": ["R0", "inmunidad de rebaño", "zonas calientes"],
+      "prohibidas": ["pandemia", "epidemia", "virus mundial", "COVID-19"]
+    },
+    {
+      "id": "MED_030",
+      "categoria": "Cuidados Paliativos",
+      "palabra_secreta": "Duelo complicado",
+      "dificultad": 2,
+      "tags": ["paliativos"],
+      "cercanos_facil": ["pérdida", "tristeza intensa"],
+      "cercanos_medio": ["prolongado", "depresión", "intervención grief"],
+      "cercanos_dificil": ["elaboración", "apego", "síntomas traumáticos"],
+      "prohibidas": ["duelo", "complicado", "pérdida", "luto", "depresión duelo"]
+    }
+  ]
+}

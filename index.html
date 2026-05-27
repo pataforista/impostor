@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de deducción médica para grupos. ¡Descubre al impostor entre los especialistas!">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Impostor">
     <title>IMPOSTOR | Psychiatry Edition</title>
     <!-- Modern Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,20 +15,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#c678ff">
 </head>
 
 <body>
     <div id="app">
         <!-- Settings Bar -->
         <div class="settings-bar">
-            <button id="toggle-sound" class="icon-btn" title="Sonido">🔊</button>
-            <select id="theme-selector" class="icon-btn" style="width: auto; border-radius: 20px; padding: 0 10px;"
-                title="Tema">
-                <option value="default">✨ Default</option>
-                <option value="plumber">🍄 Plumber</option>
-                <option value="hero">🛡️ Hero</option>
-                <option value="speed">🌀 Speed</option>
-            </select>
+            <button id="toggle-sound" class="icon-btn" title="Sonido">
+                <i data-lucide="volume-2"></i>
+            </button>
+            <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border-radius: 20px; padding: 0 10px;">
+                <i data-lucide="palette" style="width: 18px; height: 18px;"></i>
+                <select id="theme-selector" class="icon-btn" style="width: auto; padding: 0; background: transparent; border: none; outline: none;" title="Tema">
+                    <option value="default">Default</option>
+                    <option value="plumber">Plumber</option>
+                    <option value="hero">Hero</option>
+                    <option value="speed">Speed</option>
+                </select>
+            </div>
         </div>
 
         <!-- Main Background Overlay -->
@@ -32,7 +42,9 @@
 
         <header>
             <h1>IMPOSTOR</h1>
-            <div id="shift-status" class="shift-badge hidden">GUADIA: ACTIVA 🏥</div>
+            <div id="shift-status" class="shift-badge hidden">
+                <i data-lucide="hospital" style="width: 16px; height: 16px; margin-right: 4px;"></i> GUARDIA: ACTIVA
+            </div>
             <p class="subtitle">PSYCHIATRY EDITION</p>
         </header>
 
@@ -42,28 +54,30 @@
                 <h2>¿Cómo jugar?</h2>
                 <div class="guide-steps">
                     <div class="step-card">
-                        <span class="step-num">1</span>
+                        <div class="step-icon"><i data-lucide="users" style="width: 32px; height: 32px; color: var(--primary);"></i></div>
                         <div class="step-text">
                             <h4>Preparación</h4>
                             <p>Configura los jugadores y elige las categorías de diagnóstico.</p>
                         </div>
                     </div>
                     <div class="step-card">
-                        <span class="step-num">2</span>
+                        <div class="step-icon"><i data-lucide="eye-off" style="width: 32px; height: 32px; color: var(--primary);"></i></div>
                         <div class="step-text">
                             <h4>Reparto Secreto</h4>
                             <p>Pasen el móvil. Todos verán una palabra excepto el Impostor.</p>
                         </div>
                     </div>
                     <div class="step-card">
-                        <span class="step-num">3</span>
+                        <div class="step-icon"><i data-lucide="message-circle-question" style="width: 32px; height: 32px; color: var(--primary);"></i></div>
                         <div class="step-text">
                             <h4>Debate Verbal</h4>
                             <p>Hablen y den pistas sutiles para descubrir al infiltrado.</p>
                         </div>
                     </div>
                 </div>
-                <button id="go-to-setup-btn" class="primary-btn">Entendido, ¡A Jugar!</button>
+                <button id="go-to-setup-btn" class="primary-btn">
+                    <i data-lucide="check-circle" style="margin-right: 8px;"></i> Entendido, ¡A Jugar!
+                </button>
             </div>
         </section>
 
@@ -99,8 +113,15 @@
                     </div>
 
                     <div class="input-group">
+                        <label>Dominios de Juego</label>
+                        <div id="domain-pills" class="pills-container">
+                            <!-- Will be populated by JS -->
+                        </div>
+                    </div>
+
+                    <div class="input-group">
                         <div class="label-row">
-                            <label>Categorías de Diagnóstico</label>
+                            <label>Categorías (Filtradas)</label>
                             <div class="pill-controls">
                                 <button id="select-all-cats" class="pill-utility-btn all">Todas</button>
                                 <button id="select-none-cats" class="pill-utility-btn none">Ninguna</button>
@@ -110,8 +131,23 @@
                             <!-- Will be populated by JS -->
                         </div>
                     </div>
+                    <div class="input-group">
+                        <label>Modo de Juego</label>
+                        <div class="mode-toggle" style="display: flex; gap: 0.5rem; flex-direction: column;">
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="radio" name="game-mode" value="guided" checked style="width: auto;">
+                                <span>Modo Guiado (Turnos y App)</span>
+                            </label>
+                            <label class="radio-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="radio" name="game-mode" value="free" style="width: auto;">
+                                <span>Modo Libre (Debate Verbal Puro)</span>
+                            </label>
+                        </div>
+                    </div>
 
-                    <button id="start-game-btn" class="primary-btn">Comenzar Partida</button>
+                    <button id="start-game-btn" class="primary-btn">
+                        <i data-lucide="play" style="margin-right: 8px;"></i> Comenzar Partida
+                    </button>
                 </div>
             </div>
         </section>
@@ -122,7 +158,9 @@
                 <div id="distribution-prompt">
                     <p class="subtitle">ENTREGA EL TELÉFONO A:</p>
                     <h1 id="target-player-name">---</h1>
-                    <button id="ready-to-see-btn" class="primary-btn">Estoy Listo</button>
+                    <button id="ready-to-see-btn" class="primary-btn">
+                        <i data-lucide="eye" style="margin-right: 8px;"></i> Estoy Listo
+                    </button>
                 </div>
 
                 <div id="reveal-card-area" class="hidden">
@@ -144,27 +182,79 @@
                             </div>
                         </div>
                     </div>
-                    <button id="confirm-seen-btn" class="primary-btn" style="margin-top: 2rem">Lo he visto
-                        (Pasar)</button>
+                    <button id="confirm-seen-btn" class="primary-btn" style="margin-top: 2rem">
+                        <i data-lucide="check" style="margin-right: 8px;"></i> Lo he visto (Pasar)
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- Game Screen (Verbal Play) -->
+        <!-- Game Screen (Dynamic Phases) -->
         <section id="game-screen" class="screen">
             <div id="category-bg" class="category-banner"></div>
 
             <div class="game-container text-center">
                 <div class="status-bar">
-                    <div class="phase-tag">DIAGNÓSTICO EN CURSO</div>
+                    <div class="phase-tag" id="game-phase-tag">FASE 1: PISTAS</div>
+                    <div class="phase-tag" id="game-round-tag" style="background: var(--secondary); color: var(--on-secondary); margin-left: 0.5rem;">RONDA 1</div>
                 </div>
 
                 <div class="active-status glass-container">
                     <p class="subtitle">CATEGORÍA ACTUAL</p>
                     <h2 id="game-category-name">---</h2>
                     <div class="divider"></div>
-                    <p class="hint">Debatan en voz alta. ¿Quién parece no conocer la patología?</p>
-                    <button id="reveal-all-btn" class="primary-btn">REVELAR IMPOSTOR</button>
+                    
+                    <!-- Free Mode Section -->
+                    <div id="free-mode-section" class="game-phase-section hidden">
+                        <p class="hint">Modo Libre activo. Hablen, debatan, y cuando tengan una decisión, revelen el resultado.</p>
+                        <button id="free-mode-reveal-btn" class="primary-btn" style="margin-top: 2rem; background: var(--secondary); color: var(--on-secondary);">REVELAR RESULTADOS</button>
+                    </div>
+                    
+                    <!-- Clue Section -->
+                    <div id="clue-section" class="game-phase-section hidden">
+                        <p class="hint">Turno de:</p>
+                        <h2 id="current-turn-player" class="player-highlight" style="color: var(--primary); font-size: 2rem;">---</h2>
+                        <div class="input-group" style="margin-top: 1rem; text-align: center;">
+                            <input type="text" id="clue-input" placeholder="Escribe tu pista (1 palabra)..." autocomplete="off" style="text-align: center;">
+                            <p id="clue-error" class="error-text hidden" style="color: #ff4136; margin-top: 0.5rem; font-size: 0.8rem;"></p>
+                        </div>
+                        <button id="submit-clue-btn" class="primary-btn">ENVIAR PISTA</button>
+                        
+                        <div class="clue-list-container" style="margin-top: 2rem; text-align: left;">
+                            <p class="subtitle" style="text-align: center;">PISTAS DADAS (RONDA ACTUAL)</p>
+                            <ul id="clue-list" class="styled-list"></ul>
+                        </div>
+                    </div>
+
+                    <!-- Vote Section -->
+                    <div id="vote-section" class="game-phase-section hidden">
+                        <p class="hint">Votación abierta. Elijan al sospechoso.</p>
+                        <p id="vote-error" class="error-text hidden" style="color: #ff4136; margin-top: 0.5rem; font-size: 0.85rem;"></p>
+                        <div id="vote-buttons" class="vote-grid" style="margin-top: 1rem; display: grid; gap: 0.5rem;">
+                            <!-- Populated by JS -->
+                        </div>
+                        <button id="skip-vote-btn" class="pill-utility-btn none" style="margin-top: 1rem; width: 100%; padding: 1rem;">Nadie (Saltar Voto)</button>
+                    </div>
+
+                    <!-- Reveal Section -->
+                    <div id="reveal-section" class="game-phase-section hidden">
+                        <h2 id="reveal-result-title">---</h2>
+                        <p id="reveal-result-desc" class="hint">---</p>
+                        
+                        <div id="impostor-guess-area" class="hidden" style="margin-top: 1.5rem; padding: 1rem; border: 1px solid #ff4136; border-radius: 12px; background: rgba(255, 65, 54, 0.1);">
+                            <p class="subtitle" style="color: #ff4136;">¡ÚLTIMA OPORTUNIDAD!</p>
+                            <p class="hint">El impostor eliminado puede adivinar la palabra secreta para ganar la partida.</p>
+                            <div class="input-group" style="margin-top: 1rem; margin-bottom: 1rem; text-align: center;">
+                                <input type="text" id="impostor-guess-input" placeholder="Palabra secreta..." autocomplete="off" style="text-align: center;">
+                                <p id="guess-error" class="error-text hidden" style="color: #ff4136; margin-top: 0.5rem; font-size: 0.8rem;"></p>
+                            </div>
+                            <button id="submit-guess-btn" class="primary-btn" style="background: #ff4136; color: white;">ADIVINAR</button>
+                            <button id="skip-guess-btn" class="pill-utility-btn none" style="margin-top: 0.5rem; width: 100%;">SALTAR</button>
+                        </div>
+                        
+                        <button id="next-round-btn" class="primary-btn" style="margin-top: 1.5rem;">SIGUIENTE RONDA</button>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -177,12 +267,17 @@
                 <div class="result-details">
                     <p>La palabra secreta era:</p>
                     <h2 id="secret-word-display">---</h2>
+                    <div id="impostor-names-display" style="margin-top: 1rem; opacity: 0.7;"></div>
                 </div>
-                <button onclick="location.reload()" class="primary-btn">Nueva Partida</button>
+                <button onclick="location.reload()" class="primary-btn">
+                    <i data-lucide="rotate-ccw" style="margin-right: 8px;"></i> Nueva Partida
+                </button>
             </div>
         </section>
     </div>
 
+    <!-- Load Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Load Engine as a script -->
     <script type="module" src="app.js"></script>
 </body>

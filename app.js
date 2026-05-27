@@ -36,13 +36,40 @@ const holoWrapper = document.getElementById('holo-card-wrapper');
 // Game Elements
 const gameCategoryName = document.getElementById('game-category-name');
 const categoryBanner = document.getElementById('category-bg');
-const revealAllBtn = document.getElementById('reveal-all-btn');
+const domainPillsContainer = document.getElementById('domain-pills');
+
+const gamePhaseTag = document.getElementById('game-phase-tag');
+const gameRoundTag = document.getElementById('game-round-tag');
+const clueSection = document.getElementById('clue-section');
+const voteSection = document.getElementById('vote-section');
+const revealSection = document.getElementById('reveal-section');
+const freeModeSection = document.getElementById('free-mode-section');
+const freeModeRevealBtn = document.getElementById('free-mode-reveal-btn');
+
+const currentTurnPlayer = document.getElementById('current-turn-player');
+const clueInput = document.getElementById('clue-input');
+const clueError = document.getElementById('clue-error');
+const submitClueBtn = document.getElementById('submit-clue-btn');
+const clueList = document.getElementById('clue-list');
+
+const voteButtons = document.getElementById('vote-buttons');
+const skipVoteBtn = document.getElementById('skip-vote-btn');
+
+const revealResultTitle = document.getElementById('reveal-result-title');
+const revealResultDesc = document.getElementById('reveal-result-desc');
+const impostorGuessArea = document.getElementById('impostor-guess-area');
+const impostorGuessInput = document.getElementById('impostor-guess-input');
+const guessError = document.getElementById('guess-error');
+const submitGuessBtn = document.getElementById('submit-guess-btn');
+const skipGuessBtn = document.getElementById('skip-guess-btn');
+const nextRoundBtn = document.getElementById('next-round-btn');
 
 // Engine Initialization
 let engine;
-let dataset;
+let allCards = [];
 let distributionIndex = 0;
 let gamesPlayedInShift = 0;
+let isFreeMode = false;
 
 // Helper: Normalize String for filenames
 function normalizeForFilename(str) {
@@ -130,36 +157,86 @@ document.querySelectorAll('.step-btn').forEach(btn => {
 async function init() {
     audio.init();
     try {
-        const response = await fetch('impostor_deck_200_v1_1_normalizado.json');
-        dataset = await response.json();
+        const domains = [
+            { file: 'impostor_deck_200_v1_1_normalizado.json', domain: 'Psiquiatría' },
+            { file: 'medicine_general.json', domain: 'Medicina General' },
+            { file: 'psychology.json', domain: 'Psicología' }
+        ];
 
-        const categories = [...new Set(dataset.cards.map(c => c.categoria))].sort();
-        categoryPillsContainer.innerHTML = '';
-        categories.forEach(cat => {
+        allCards = [];
+        for (const d of domains) {
+            try {
+                const res = await fetch(d.file);
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+                const data = await res.json();
+                data.cards.forEach(c => {
+                    c.domain = d.domain;
+                    allCards.push(c);
+                });
+            } catch (err) {
+                console.warn(`Failed to load dataset: ${d.file}`, err);
+            }
+        }
+        
+        if (allCards.length === 0) {
+            alert("No se pudo cargar ninguna carta. Comprueba tu conexión.");
+            return;
+        }
+        
+        const uniqueDomains = [...new Set(allCards.map(c => c.domain))].sort();
+        if(domainPillsContainer) domainPillsContainer.innerHTML = '';
+        uniqueDomains.forEach(dom => {
             const pill = document.createElement('div');
-            pill.className = 'category-pill active'; // Pre-selected
+            pill.className = 'category-pill active no-image';
             const label = document.createElement('span');
             label.className = 'pill-label';
-            label.textContent = cat;
+            label.textContent = dom;
             pill.appendChild(label);
-            pill.dataset.category = cat;
+            pill.dataset.domain = dom;
             pill.addEventListener('click', () => {
                 pill.classList.toggle('active');
                 triggerHaptic('light');
                 audio.play('click');
-                if (pill.classList.contains('active')) {
-                    updateBackground(cat);
-                }
+                updateCategoryPills();
             });
-            pill.addEventListener('mouseenter', () => {
-                updateBackground(cat);
-            });
-            applyCategoryPreview(pill, cat);
-            categoryPillsContainer.appendChild(pill);
+            if(domainPillsContainer) domainPillsContainer.appendChild(pill);
         });
+
+        updateCategoryPills();
     } catch (e) {
         console.error("Failed to load dataset", e);
     }
+}
+
+function updateCategoryPills() {
+    if(!categoryPillsContainer) return;
+    const selectedDomains = Array.from(document.querySelectorAll('#domain-pills .category-pill.active')).map(p => p.dataset.domain);
+    const filteredCards = allCards.filter(c => selectedDomains.includes(c.domain));
+    const categories = [...new Set(filteredCards.map(c => c.categoria))].sort();
+    
+    categoryPillsContainer.innerHTML = '';
+    categories.forEach(cat => {
+        const pill = document.createElement('div');
+        pill.className = 'category-pill active'; 
+        const label = document.createElement('span');
+        label.className = 'pill-label';
+        label.textContent = cat;
+        pill.appendChild(label);
+        pill.dataset.category = cat;
+        pill.addEventListener('click', () => {
+            pill.classList.toggle('active');
+            triggerHaptic('light');
+            audio.play('click');
+            if (pill.classList.contains('active')) {
+                updateBackground(cat);
+            }
+        });
+        pill.addEventListener('mouseenter', () => {
+            updateBackground(cat);
+        });
+        applyCategoryPreview(pill, cat);
+        categoryPillsContainer.appendChild(pill);
+    });
 }
 
 goToSetupBtn.addEventListener('click', () => {
@@ -183,8 +260,13 @@ themeSelector.addEventListener('change', (e) => {
 
 toggleSoundBtn.addEventListener('click', () => {
     audio.toggle();
-    toggleSoundBtn.textContent = audio.enabled ? '🔊' : '🔇';
     audio.init();
+    // Update icon based on state
+    const icon = toggleSoundBtn.querySelector('i');
+    if (icon) {
+        icon.setAttribute('data-lucide', audio.enabled ? 'volume-2' : 'volume-x');
+        lucide.createIcons();
+    }
 });
 
 // 2. Start Game Logic
@@ -197,17 +279,44 @@ startBtn.addEventListener('click', () => {
     const players = playerNames.map((name, i) => ({ id: i.toString(), name }));
     const impostorCount = parseInt(impostorInput.value);
     const difficulty = parseInt(difficultyInput.value);
-    const selectedCats = Array.from(document.querySelectorAll('.category-pill.active')).map(p => p.dataset.category);
+    const selectedCats = Array.from(document.querySelectorAll('#category-pills .category-pill.active')).map(p => p.dataset.category);
 
-    const wordBank = dataset.cards
-        .filter(card => card.dificultad <= difficulty)
+    const selectedModeNode = document.querySelector('input[name="game-mode"]:checked');
+    isFreeMode = selectedModeNode ? selectedModeNode.value === 'free' : false;
+
+    const wordBank = allCards
+        .filter(card => selectedCats.includes(card.categoria) && card.dificultad <= difficulty)
         .map(card => ({
             word: card.palabra_secreta,
             category: card.categoria,
             forbidden: card.prohibidas
         }));
 
-    engine = new ImpostorWordEngine({ impostorCount });
+    if (wordBank.length === 0) {
+        return alert("No hay cartas disponibles con estos filtros. Cambia la dificultad o categorías.");
+    }
+
+    const defaultConfig = {
+        impostorCount,
+        maxRounds: 3,
+        seed: Date.now(),
+        enforceOneWord: true,
+        forbidRepeatedClues: true,
+        normalizeClues: "lower",
+        allowSkipVote: true,
+        tiePolicy: "NO_ELIMINATION",
+        requireAllVotes: false,
+        impostorsWinOnSurviveToEnd: true,
+        impostorsWinOnParity: true,
+        allowImpostorGuess: true,
+        impostorGuessTiming: "AFTER_ELIMINATION_REVEAL",
+        impostorGuessOutcomeOnWrong: "NOTHING",
+        onlyGuessIfEliminated: true
+    };
+
+    engine = new ImpostorWordEngine(defaultConfig);
+    setupEngineListeners();
+
     engine.start({
         players,
         wordBank,
@@ -294,19 +403,235 @@ function showGameScreen() {
     switchScreen('game');
 }
 
-revealAllBtn.addEventListener('click', () => {
-    triggerHaptic('heavy');
-    audio.play('success');
-    const state = engine.getState();
+function setupEngineListeners() {
+    engine.on(ev => {
+        switch (ev.type) {
+            case "PHASE_CHANGED":
+                updateGamePhaseUI(ev.state);
+                break;
+            case "TURN_CHANGED":
+                updateTurnUI(ev.state);
+                break;
+            case "CLUE_ACCEPTED":
+                clueInput.value = '';
+                clueError.classList.add('hidden');
+                renderClueList(ev.state);
+                break;
+            case "CLUE_REJECTED":
+                clueError.textContent = ev.reason;
+                clueError.classList.remove('hidden');
+                triggerHaptic('heavy');
+                break;
+            case "VOTE_CAST":
+                break;
+            case "VOTE_REJECTED": {
+                // Show inline error instead of blocking alert
+                const voteErr = document.getElementById('vote-error');
+                if (voteErr) {
+                    voteErr.textContent = ev.reason;
+                    voteErr.classList.remove('hidden');
+                    setTimeout(() => voteErr.classList.add('hidden'), 3000);
+                }
+                break;
+            }
+            case "VOTE_RESOLVED":
+                renderRevealUI(ev);
+                break;
+            case "IMPOSTOR_GUESS":
+                if (!ev.correct) {
+                    guessError.textContent = "¡INCORRECTO! No era esa palabra.";
+                    guessError.classList.remove('hidden');
+                } else {
+                    guessError.classList.add('hidden');
+                }
+                break;
+            case "GAME_ENDED":
+                showEndScreen(ev.state);
+                break;
+        }
+    });
+}
+
+function updateGamePhaseUI(state) {
+    const phaseLabels = { CLUE: 'PISTAS', VOTE: 'VOTACIÓN', REVEAL: 'RESULTADO' };
+    if (gamePhaseTag) gamePhaseTag.textContent = `FASE: ${phaseLabels[state.phase] || state.phase}`;
+    if (gameRoundTag) gameRoundTag.textContent = `RONDA ${state.round}`;
+    
+    if(clueSection) clueSection.classList.add('hidden');
+    if(voteSection) voteSection.classList.add('hidden');
+    if(revealSection) revealSection.classList.add('hidden');
+    if(freeModeSection) freeModeSection.classList.add('hidden');
+
+    const showPhaseContent = () => {
+        if (isFreeMode) {
+            if (state.phase === "CLUE") {
+                if (freeModeSection) freeModeSection.classList.remove('hidden');
+                if (gamePhaseTag) gamePhaseTag.textContent = `DEBATE VERBAL`;
+            }
+            return;
+        }
+
+        if (state.phase === "CLUE" && clueSection) {
+            clueSection.classList.remove('hidden');
+            renderClueList(state);
+        } else if (state.phase === "VOTE" && voteSection) {
+            voteSection.classList.remove('hidden');
+            renderVoteUI(state);
+        } else if (state.phase === "REVEAL" && revealSection) {
+            revealSection.classList.remove('hidden');
+        }
+    };
+
+    // Fade out visible sections
+    const sections = [clueSection, voteSection, revealSection, freeModeSection];
+    let needsDelay = false;
+    sections.forEach(sec => {
+        if (sec && !sec.classList.contains('hidden')) {
+            sec.classList.add('fade-out');
+            needsDelay = true;
+            setTimeout(() => {
+                sec.classList.add('hidden');
+                sec.classList.remove('fade-out');
+            }, 200);
+        }
+    });
+
+    if (needsDelay) {
+        setTimeout(showPhaseContent, 210);
+    } else {
+        showPhaseContent();
+    }
+}
+
+function updateTurnUI(state) {
+    const currentId = state.turnOrder[state.currentTurnIndex];
+    const player = state.players.find(p => p.id === currentId);
+    if (player && currentTurnPlayer) {
+        currentTurnPlayer.textContent = player.name;
+    }
+    // Clear clue input for the new player's turn
+    if (clueInput) clueInput.value = '';
+    if (clueError) clueError.classList.add('hidden');
+}
+
+function renderClueList(state) {
+    if (!clueList) return;
+    clueList.innerHTML = '';
+    state.cluesThisRound.forEach(c => {
+        const p = state.players.find(x => x.id === c.playerId);
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="player-name">${p.name}</span><span class="player-clue">${c.rawClue}</span>`;
+        clueList.appendChild(li);
+    });
+}
+
+function renderVoteUI(state) {
+    if (!voteButtons) return;
+    voteButtons.innerHTML = '';
+    const alivePlayers = state.players.filter(p => p.alive);
+    // Determine the correct voter: the current turn player
+    const currentVoterId = state.turnOrder
+        ? state.turnOrder[state.currentTurnIndex] || alivePlayers[0]?.id
+        : alivePlayers[0]?.id;
+    alivePlayers.forEach(p => {
+        const btn = document.createElement('button');
+        btn.className = 'vote-btn';
+        btn.textContent = p.name;
+        btn.onclick = () => {
+            engine.castVote(currentVoterId, p.id);
+            engine.resolveVote();
+        };
+        voteButtons.appendChild(btn);
+    });
+    if (skipVoteBtn) {
+        skipVoteBtn.onclick = () => {
+            engine.castVote(currentVoterId, "SKIP");
+            engine.resolveVote();
+        };
+    }
+}
+
+function renderRevealUI(ev) {
+    const state = ev.state;
+    const eliminatedId = ev.eliminated;
+    if (impostorGuessArea) impostorGuessArea.classList.add('hidden');
+    if (impostorGuessInput) impostorGuessInput.value = '';
+    if (guessError) guessError.classList.add('hidden');
+
+    if (eliminatedId) {
+        const p = state.players.find(x => x.id === eliminatedId);
+        if(revealResultTitle) revealResultTitle.textContent = `${p.name} ELIMINADO`;
+        if(revealResultDesc) revealResultDesc.textContent = p.role === "IMPOSTOR" ? "¡Era un IMPOSTOR!" : "Era un ESPECIALISTA inocente.";
+        
+        if (p.role === "IMPOSTOR" && !p.hasGuessed) {
+            if (impostorGuessArea) impostorGuessArea.classList.remove('hidden');
+            if (submitGuessBtn) {
+                submitGuessBtn.onclick = () => {
+                    const guess = impostorGuessInput.value;
+                    if (guess) engine.impostorGuess(p.id, guess);
+                };
+            }
+            if (skipGuessBtn) {
+                skipGuessBtn.onclick = () => {
+                    engine.finishReveal();
+                };
+            }
+        }
+    } else {
+        if(revealResultTitle) revealResultTitle.textContent = "EMPATE / SALTO";
+        if(revealResultDesc) revealResultDesc.textContent = "Nadie fue eliminado en esta ronda.";
+    }
+
+    if(nextRoundBtn) {
+        nextRoundBtn.onclick = () => {
+            engine.finishReveal();
+        };
+    }
+}
+
+if (submitClueBtn) {
+    submitClueBtn.addEventListener('click', () => {
+        const state = engine.getState();
+        const currentId = state.turnOrder[state.currentTurnIndex];
+        engine.submitClue(currentId, clueInput.value);
+    });
+}
+
+if (freeModeRevealBtn) {
+    freeModeRevealBtn.addEventListener('click', () => {
+        triggerHaptic('heavy');
+        audio.play('success');
+        const state = engine.getState();
+        showEndScreen(state);
+    });
+}
+
+function showEndScreen(state) {
     gamesPlayedInShift++;
-
     document.getElementById('end-result-label').textContent = `ÉXITO CLÍNICO #${gamesPlayedInShift}`;
-    const impostors = state.players.filter(p => p.role === "IMPOSTOR").map(p => p.name).join(", ");
+    
+    const impostors = state.players.filter(p => p.role === "IMPOSTOR").map(p => p.name);
+    const impostorNamesEl = document.getElementById('impostor-names-display');
 
-    document.getElementById('winner-display').textContent = `IMPOSTOR(ES): ${impostors}`;
+    if (isFreeMode) {
+        document.getElementById('winner-display').textContent = `IMPOSTOR(ES): ${impostors.join(", ")}`;
+    } else {
+        if (state.winner === "IMPOSTORS") {
+            document.getElementById('winner-display').textContent = "¡GANAN LOS IMPOSTORES!";
+        } else if (state.winner === "CREWMATES") {
+            document.getElementById('winner-display').textContent = "¡GANAN LOS ESPECIALISTAS!";
+        } else {
+            document.getElementById('winner-display').textContent = "EMPATE / FIN DE RONDA";
+        }
+        // Always show who the impostors were
+        if (impostorNamesEl) {
+            impostorNamesEl.textContent = `El impostor era: ${impostors.join(", ")}`;
+        }
+    }
+
     document.getElementById('secret-word-display').textContent = state.secret.word;
     switchScreen('end');
-});
+}
 
 // Feedback Helper
 function triggerHaptic(type = 'light') {
@@ -324,10 +649,18 @@ function triggerHaptic(type = 'light') {
 }
 
 function switchScreen(id) {
-    Object.values(screens).forEach(s => {
-        if (s) s.classList.remove('active');
-    });
-    if (screens[id]) {
+    const currentActive = document.querySelector('.screen.active');
+    
+    if (currentActive && currentActive.id !== `${id}-screen`) {
+        currentActive.classList.add('fade-out');
+        setTimeout(() => {
+            currentActive.classList.remove('active', 'fade-out');
+            if (screens[id]) {
+                screens[id].classList.add('active');
+                triggerHaptic('light');
+            }
+        }, 200);
+    } else if (!currentActive && screens[id]) {
         screens[id].classList.add('active');
         triggerHaptic('light');
     }
@@ -353,4 +686,21 @@ holoWrapper.addEventListener('pointermove', (e) => {
     holoWrapper.style.setProperty('--background-y', `${py}%`);
 });
 
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(err => {
+            console.warn("Service Worker registration failed: ", err);
+        });
+    });
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) {
+            refreshing = true;
+            window.location.reload();
+        }
+    });
+}
+
 init();
+lucide.createIcons();

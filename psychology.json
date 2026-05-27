@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "name": "Psicología",
+    "version": "v1.0",
+    "language": "es",
+    "n_cards": 30,
+    "fields": ["id", "categoria", "palabra_secreta", "prohibidas", "dificultad", "tags", "cercanos_facil", "cercanos_medio", "cercanos_dificil"],
+    "notes": "Conceptos clave en psicología: clínica, educativa, social, neuropsicología, terapias, evaluación"
+  },
+  "cards": [
+    {
+      "id": "PSY_001",
+      "categoria": "Psicología Clínica",
+      "palabra_secreta": "Trastorno de ansiedad generalizada",
+      "dificultad": 2,
+      "tags": ["ansiedad"],
+      "cercanos_facil": ["preocupación excesiva", "tensión"],
+      "cercanos_medio": ["TAG", "insomnio", "psicoterapia"],
+      "cercanos_dificil": ["criterios DSM-5", "hipersensibilidad a amenaza", "generalizada"],
+      "prohibidas": ["ansiedad", "generalizada", "TAG", "preocupación", "DSM"]
+    },
+    {
+      "id": "PSY_002",
+      "categoria": "Psicología Clínica",
+      "palabra_secreta": "Terapia cognitivo-conductual",
+      "dificultad": 2,
+      "tags": ["terapia", "TCC"],
+      "cercanos_facil": ["cambiar pensamientos", "conductas"],
+      "cercanos_medio": ["Beck", "reestructuración cognitiva", "exposición"],
+      "cercanos_dificil": ["activación conductual", "formulación de caso", "ensayos conductuales"],
+      "prohibidas": ["TCC", "cognitivo conductual", "Beck", "terapia", "reestructuración"]
+    },
+    {
+      "id": "PSY_003",
+      "categoria": "Psicología Clínica",
+      "palabra_secreta": "Fobia social",
+      "dificultad": 1,
+      "tags": ["ansiedad"],
+      "cercanos_facil": ["miedo hablar público", "vergüenza"],
+      "cercanos_medio": ["ansiedad evaluación", "evitación", "beta bloqueantes"],
+      "cercanos_dificil": ["deterioro laboral", "criterios DSM-5", "fobia específica"],
+      "prohibidas": ["fobia", "social", "ansiedad social", "evitación", "vergüenza"]
+    },
+    {
+      "id": "PSY_004",
+      "categoria": "Neuropsicología",
+      "palabra_secreta": "Función ejecutiva",
+      "dificultad": 2,
+      "tags": ["neuro", "cognición"],
+      "cercanos_facil": ["organización", "planificación"],
+      "cercanos_medio": ["corteza prefrontal", "inhibición", "flexibilidad mental"],
+      "cercanos_dificil": ["memoria de trabajo", "Stroop", "Wisconsin card sorting"],
+      "prohibidas": ["función ejecutiva", "lóbulo frontal", "planificación", "inhibición"]
+    },
+    {
+      "id": "PSY_005",
+      "categoria": "Neuropsicología",
+      "palabra_secreta": "Amnesia retrógrada",
+      "dificultad": 2,
+      "tags": ["memoria"],
+      "cercanos_facil": ["olvidar pasado", "trauma"],
+      "cercanos_medio": ["hipocampo", "eventos previos al daño", "Korsakoff"],
+      "cercanos_dificil": ["disociación entre memoria episódica y semántica", "encefalitis herpética"],
+      "prohibidas": ["amnesia", "retrógrada", "memoria", "olvido", "pasado"]
+    },
+    {
+      "id": "PSY_006",
+      "categoria": "Neuropsicología",
+      "palabra_secreta": "Afasia de Broca",
+      "dificultad": 2,
+      "tags": ["lenguaje"],
+      "cercanos_facil": ["habla entrecortada", "expresión dificultad"],
+      "cercanos_medio": ["área 44 de Brodmann", "comprensión conservada", "agramatismo"],
+      "cercanos_dificil": ["hemiplejia derecha", "lóbulo frontal", "telegráfico"],
+      "prohibidas": ["afasia", "Broca", "expresiva", "lenguaje", "agramática"]
+    },
+    {
+      "id": "PSY_007",
+      "categoria": "Psicología del Desarrollo",
+      "palabra_secreta": "Teoría del apego",
+      "dificultad": 2,
+      "tags": ["desarrollo"],
+      "cercanos_facil": ["vínculo madre-hijo", "Bowlby"],
+      "cercanos_medio": ["Ainsworth", "situación extraña", "apego seguro"],
+      "cercanos_dificil": ["internal working model", "base segura", "apego desorganizado"],
+      "prohibidas": ["apego", "Bowlby", "Ainsworth", "vinculo afectivo", "seguro"]
+    },
+    {
+      "id": "PSY_008",
+      "categoria": "Psicología del Desarrollo",
+      "palabra_secreta": "Estadio de las operaciones concretas",
+      "dificultad": 3,
+      "tags": ["Piaget"],
+      "cercanos_facil": ["Piaget", "7-11 años"],
+      "cercanos_medio": ["conservación", "reversibilidad", "clasificación"],
+      "cercanos_dificil": ["lógica inductiva", "descentración", "seriación"],
+      "prohibidas": ["Piaget", "operaciones concretas", "conservación", "etapas"]
+    },
+    {
+      "id": "PSY_009",
+      "categoria": "Psicología Social",
+      "palabra_secreta": "Disonancia cognitiva",
+      "dificultad": 2,
+      "tags": ["social", "cognición"],
+      "cercanos_facil": ["incomodidad", "contradicción creencias"],
+      "cercanos_medio": ["Festinger", "autojustificación", "cambio actitud"],
+      "cercanos_dificil": ["esfuerzo justificación", "selección libre", "post-decisión"],
+      "prohibidas": ["disonancia", "cognitiva", "Festinger", "inconsistencia", "autojustificación"]
+    },
+    {
+      "id": "PSY_010",
+      "categoria": "Psicología Social",
+      "palabra_secreta": "Efecto espectador",
+      "dificultad": 2,
+      "tags": ["social"],
+      "cercanos_facil": ["aprender a ayudar", "difusión responsabilidad"],
+      "cercanos_medio": ["Darley y Latané", "ignorancia pluralista", "Kitty Genovese"],
+      "cercanos_dificil": ["inhibición pública", "coste-recompensa", "modelos de intervención"],
+      "prohibidas": ["espectador", "bystander", "difusión responsabilidad", "Genovese", "no ayuda"]
+    },
+    {
+      "id": "PSY_011",
+      "categoria": "Psicología Social",
+      "palabra_secreta": "Conformidad",
+      "dificultad": 1,
+      "tags": ["social"],
+      "cercanos_facil": ["presión del grupo", "cambiar opinión"],
+      "cercanos_medio": ["Asch", "experimento líneas", "normatividad"],
+      "cercanos_dificil": ["influencia normativa vs informativa", "mayoría", "desviación"],
+      "prohibidas": ["conformidad", "Asch", "presión grupo", "obediencia", "norma"]
+    },
+    {
+      "id": "PSY_012",
+      "categoria": "Psicología Educativa",
+      "palabra_secreta": "Aprendizaje significativo",
+      "dificultad": 2,
+      "tags": ["educación"],
+      "cercanos_facil": ["Ausubel", "relacionar conocimientos"],
+      "cercanos_medio": ["organizadores previos", "estructura cognitiva", "anclaje"],
+      "cercanos_dificil": ["diferenciación progresiva", "asimilación", "reconciliación integradora"],
+      "prohibidas": ["aprendizaje significativo", "Ausubel", "conocimiento previo", "organizador"]
+    },
+    {
+      "id": "PSY_013",
+      "categoria": "Psicología Educativa",
+      "palabra_secreta": "Zona de desarrollo próximo",
+      "dificultad": 2,
+      "tags": ["educación"],
+      "cercanos_facil": ["Vygotsky", "ayuda de un adulto"],
+      "cercanos_medio": ["andamiaje", "potencial de aprendizaje", "distancia"],
+      "cercanos_dificil": ["internalización", "funciones superiores", "mediación semiótica"],
+      "prohibidas": ["ZDP", "zona desarrollo próximo", "Vygotsky", "andamiaje", "ayuda"]
+    },
+    {
+      "id": "PSY_014",
+      "categoria": "Psicología de la Personalidad",
+      "palabra_secreta": "Rasgo",
+      "dificultad": 1,
+      "tags": ["personalidad"],
+      "cercanos_facil": ["característica estable", "forma de ser"],
+      "cercanos_medio": ["Big Five", "Allport", "factor de personalidad"],
+      "cercanos_dificil": ["consistencia temporal", "teoría léxica", "autorreporte"],
+      "prohibidas": ["rasgo", "personalidad", "Big Five", "extraversión", "neuroticismo"]
+    },
+    {
+      "id": "PSY_015",
+      "categoria": "Psicología de la Personalidad",
+      "palabra_secreta": "Narcisismo",
+      "dificultad": 1,
+      "tags": ["trastorno", "personalidad"],
+      "cercanos_facil": ["egocentrismo", "admiración"],
+      "cercanos_medio": ["grandiosidad", "falta empatía", "DSM-5"],
+      "cercanos_dificil": ["vulnerable", "fantasías ilimitadas", "explotación"],
+      "prohibidas": ["narcisismo", "NPD", "grandiosidad", "egocentrismo", "superioridad"]
+    },
+    {
+      "id": "PSY_016",
+      "categoria": "Psicología Organizacional",
+      "palabra_secreta": "Burnout",
+      "dificultad": 1,
+      "tags": ["trabajo"],
+      "cercanos_facil": ["agotamiento laboral", "estrés crónico"],
+      "cercanos_medio": ["despersonalización", "ineficacia profesional", "Maslach"],
+      "cercanos_dificil": ["engagement", "recursos laborales", "síndrome de estar quemado"],
+      "prohibidas": ["burnout", "agotamiento", "desgaste profesional", "estrés trabajo", "Maslach"]
+    },
+    {
+      "id": "PSY_017",
+      "categoria": "Psicología Organizacional",
+      "palabra_secreta": "Liderazgo transformacional",
+      "dificultad": 2,
+      "tags": ["liderazgo"],
+      "cercanos_facil": ["inspirar", "motivar"],
+      "cercanos_medio": ["Bass", "carisma", "estimulación intelectual"],
+      "cercanos_dificil": ["consideración individualizada", "visión", "transaccional"],
+      "prohibidas": ["liderazgo", "transformacional", "Bass", "carisma", "inspirar"]
+    },
+    {
+      "id": "PSY_018",
+      "categoria": "Psicología de la Salud",
+      "palabra_secreta": "Coping",
+      "dificultad": 2,
+      "tags": ["estrés"],
+      "cercanos_facil": ["afrontamiento", "manejo estrés"],
+      "cercanos_medio": ["Lazarus", "resolución de problemas", "apoyo social"],
+      "cercanos_dificil": ["reevaluación cognitiva", "evitación", "resistencia"],
+      "prohibidas": ["coping", "afrontamiento", "estrés", "Lazarus", "estrategias"]
+    },
+    {
+      "id": "PSY_019",
+      "categoria": "Psicología de la Salud",
+      "palabra_secreta": "Adherencia terapéutica",
+      "dificultad": 2,
+      "tags": ["tratamiento"],
+      "cercanos_facil": ["seguir tratamiento", "cumplir receta"],
+      "cercanos_medio": ["motivación", "creencias de salud", "modelo transteórico"],
+      "cercanos_dificil": ["automonitoreo", "alarma", "intervención multicomponente"],
+      "prohibidas": ["adherencia", "terapéutica", "cumplimiento", "tratamiento", "medicación"]
+    },
+    {
+      "id": "PSY_020",
+      "categoria": "Evaluación Psicológica",
+      "palabra_secreta": "Validez de constructo",
+      "dificultad": 2,
+      "tags": ["psicometría"],
+      "cercanos_facil": ["mide lo que dice", "teoría"],
+      "cercanos_medio": ["validez convergente", "discriminante", "Matriz MTMM"],
+      "cercanos_dificil": ["análisis factorial", "validez nomológica", "red de relaciones"],
+      "prohibidas": ["validez", "constructo", "psicometría", "prueba", "medida"]
+    },
+    {
+      "id": "PSY_021",
+      "categoria": "Evaluación Psicológica",
+      "palabra_secreta": "Confiabilidad test-retest",
+      "dificultad": 2,
+      "tags": ["psicometría"],
+      "cercanos_facil": ["estabilidad", "repetir prueba"],
+      "cercanos_medio": ["coeficiente correlación", "consistencia temporal", "error de medición"],
+      "cercanos_dificil": ["intervalo de tiempo", "efecto práctica", "fiabilidad"],
+      "prohibidas": ["confiabilidad", "test-retest", "estabilidad", "repetibilidad", "coeficiente"]
+    },
+    {
+      "id": "PSY_022",
+      "categoria": "Terapias",
+      "palabra_secreta": "Desensibilización sistemática",
+      "dificultad": 2,
+      "tags": ["terapia", "TCC"],
+      "cercanos_facil": ["exposición gradual", "fobia"],
+      "cercanos_medio": ["Wolpe", "jerarquía ansiedad", "relajación"],
+      "cercanos_dificil": ["inhibición recíproca", "imaginación", "vivo"],
+      "prohibidas": ["desensibilización", "sistemática", "Wolpe", "exposición", "fobia"]
+    },
+    {
+      "id": "PSY_023",
+      "categoria": "Terapias",
+      "palabra_secreta": "Mindfulness",
+      "dificultad": 1,
+      "tags": ["terapia", "atención"],
+      "cercanos_facil": ["atención plena", "meditación"],
+      "cercanos_medio": ["Kabat-Zinn", "aceptación", "aquí y ahora"],
+      "cercanos_dificil": ["MBSR", "MBCT", "distanciamiento"],
+      "prohibidas": ["mindfulness", "atención plena", "meditación", "Kabat-Zinn", "aceptación"]
+    },
+    {
+      "id": "PSY_024",
+      "categoria": "Psicología Forense",
+      "palabra_secreta": "Competencia para ser juzgado",
+      "dificultad": 3,
+      "tags": ["forense"],
+      "cercanos_facil": ["juicio", "derecho"],
+      "cercanos_medio": ["capacidad legal", "entender proceso", "Dusky"],
+      "cercanos_dificil": ["evaluación forense", "simulación", "restauración competencia"],
+      "prohibidas": ["competencia", "juzgado", "imputabilidad", "forense", "derecho"]
+    },
+    {
+      "id": "PSY_025",
+      "categoria": "Psicología Forense",
+      "palabra_secreta": "Síndrome de alienación parental",
+      "dificultad": 3,
+      "tags": ["forense", "familia"],
+      "cercanos_facil": ["manipulación", "hijo contra padre"],
+      "cercanos_medio": ["Gardner", "custodia", "rechazo injustificado"],
+      "cercanos_dificil": ["controversia científica", "evaluación pericial", "intervención"],
+      "prohibidas": ["alienación", "parental", "SAP", "Gardner", "custodia"]
+    },
+    {
+      "id": "PSY_026",
+      "categoria": "Psicología Positiva",
+      "palabra_secreta": "Flow",
+      "dificultad": 2,
+      "tags": ["bienestar"],
+      "cercanos_facil": ["fluir", "absorción"],
+      "cercanos_medio": ["Csikszentmihalyi", "desafío-habilidad", "estado óptimo"],
+      "cercanos_dificil": ["autotélico", "pérdida autoconciencia", "feedback inmediato"],
+      "prohibidas": ["flow", "fluir", "Csikszentmihalyi", "estado óptimo", "absorción"]
+    },
+    {
+      "id": "PSY_027",
+      "categoria": "Psicología Positiva",
+      "palabra_secreta": "Resiliencia",
+      "dificultad": 1,
+      "tags": ["bienestar"],
+      "cercanos_facil": ["superar adversidad", "fortaleza"],
+      "cercanos_medio": ["adaptación positiva", "factores protectores", "afrontamiento"],
+      "cercanos_dificil": ["crecimiento postraumático", "empoderamiento", "flexibilidad psicológica"],
+      "prohibidas": ["resiliencia", "adversidad", "superación", "resistencia", "fortaleza"]
+    },
+    {
+      "id": "PSY_028",
+      "categoria": "Psicología del Deporte",
+      "palabra_secreta": "Visualización",
+      "dificultad": 1,
+      "tags": ["deporte"],
+      "cercanos_facil": ["imaginar", "práctica mental"],
+      "cercanos_medio": ["entrenamiento imagen", "autoeficacia", "deportista"],
+      "cercanos_dificil": ["ensayo imaginario", "activación psicofisiológica", "cinesiología"],
+      "prohibidas": ["visualización", "imaginación", "práctica mental", "imágenes", "deporte"]
+    },
+    {
+      "id": "PSY_029",
+      "categoria": "Psicología del Deporte",
+      "palabra_secreta": "Activación óptima",
+      "dificultad": 2,
+      "tags": ["arousal"],
+      "cercanos_facil": ["energía nivel", "rendimiento"],
+      "cercanos_medio": ["Ley de Yerkes-Dodson", "ansiedad", "zona funcional"],
+      "cercanos_dificil": ["curva U invertida", "catecolaminas", "regulación"],
+      "prohibidas": ["activación", "arousal", "óptimo", "Yerkes-Dodson", "rendimiento"]
+    },
+    {
+      "id": "PSY_030",
+      "categoria": "Historia de la Psicología",
+      "palabra_secreta": "Condicionamiento clásico",
+      "dificultad": 1,
+      "tags": ["aprendizaje"],
+      "cercanos_facil": ["Pavlov", "perro campana"],
+      "cercanos_medio": ["estímulo neutral", "reflejo condicionado", "extinción"],
+      "cercanos_dificil": ["generalización", "discriminación", "fobias experimentales"],
+      "prohibidas": ["Pavlov", "condicionamiento clásico", "reflejo", "campana", "salivación"]
+    }
+  ]
+}
