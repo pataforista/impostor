@@ -1,5 +1,5 @@
 // example.ts
-import { ImpostorWordEngine } from "./impostor-word-engine";
+import { ImpostorWordEngine } from "./impostor-word-engine.js";
 
 const engine = new ImpostorWordEngine({
     impostorCount: 1,
@@ -70,10 +70,10 @@ const crewmates = state.players.filter(p => p.role === "CREWMATE");
 console.log(`\nImpostor is: ${impostor.name} (${impostor.id})`);
 
 // Round 1 Clues
-engine.submitClue(state.turnOrder[0], "Ruedas");
-engine.submitClue(state.turnOrder[1], "Carga");
-engine.submitClue(state.turnOrder[2], "Diesel");
-engine.submitClue(state.turnOrder[3], "Grande");
+engine.submitClue(state.turnOrder[0]!, "Ruedas");
+engine.submitClue(state.turnOrder[1]!, "Carga");
+engine.submitClue(state.turnOrder[2]!, "Diesel");
+engine.submitClue(state.turnOrder[3]!, "Grande");
 
 // Round 1 Voting - Everyone votes for the impostor
 players.forEach(p => {

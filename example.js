@@ -1,5 +1,5 @@
 // example.ts
-import { ImpostorWordEngine } from "./impostor-word-engine";
+import { ImpostorWordEngine } from "./impostor-word-engine.js";
 const engine = new ImpostorWordEngine({
     impostorCount: 1,
     maxRounds: 3,
