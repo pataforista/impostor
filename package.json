@@ -5,7 +5,9 @@
   "description": "Word-based impostor game engine",
   "main": "impostor-word-engine.ts",
   "scripts": {
-    "test": "tsx example.ts"
+    "build": "tsc",
+    "test": "node example.js",
+    "test:ts": "tsx example.ts"
   },
   "devDependencies": {
     "@types/node": "^25.2.2",

@@ -167,3 +167,4 @@ export declare class ImpostorWordEngine {
     private eqLoose;
     private emit;
 }
+//# sourceMappingURL=impostor-word-engine.d.ts.map
