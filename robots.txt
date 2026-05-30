@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pataforista.github.io/impostor/sitemap.xml

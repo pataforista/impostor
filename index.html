@@ -4,19 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Juego de deducción médica para grupos. ¡Descubre al impostor entre los especialistas!">
+
+    <!-- Primary SEO -->
+    <title>Impostor: juego de mesa para fiestas | Edición médica y psiquiatría</title>
+    <meta name="description"
+        content="Juego del impostor gratis para grupos y fiestas. Descubre al infiltrado entre especialistas con cartas de psiquiatría, medicina y psicología. Sin instalación, funciona offline y en el móvil.">
+    <meta name="keywords"
+        content="juego del impostor, impostor, juego de mesa, juegos para fiestas, juego de deducción, juego de grupo, psiquiatría, medicina, psicología, juego educativo, who is the impostor, juego sin instalación, party game en español">
+    <meta name="author" content="pataforista">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <link rel="canonical" href="https://pataforista.github.io/impostor/">
+    <meta name="theme-color" content="#c678ff">
+
+    <!-- PWA / Apple -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Impostor">
-    <title>IMPOSTOR | Psychiatry Edition</title>
-    <!-- Modern Typography -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Impostor">
+    <meta property="og:title" content="Impostor: juego de mesa para fiestas | Edición médica y psiquiatría">
+    <meta property="og:description"
+        content="Descubre al impostor entre los especialistas. Juego de deducción gratis para grupos, con cartas de psiquiatría, medicina y psicología. Funciona offline.">
+    <meta property="og:url" content="https://pataforista.github.io/impostor/">
+    <meta property="og:image" content="https://pataforista.github.io/impostor/favicon.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Impostor: juego de mesa para fiestas">
+    <meta name="twitter:description"
+        content="Descubre al impostor entre los especialistas. Juego de deducción gratis para grupos. Funciona offline.">
+    <meta name="twitter:image" content="https://pataforista.github.io/impostor/favicon.svg">
+
+    <!-- Modern Typography (single request, preconnected, non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#c678ff">
+
+    <!-- Structured data: helps search engines understand and localize the game -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Impostor: Edición Médica y Psiquiatría",
+        "alternateName": "Juego del Impostor",
+        "url": "https://pataforista.github.io/impostor/",
+        "description": "Juego del impostor para grupos y fiestas. Descubre al infiltrado entre especialistas con cartas de psiquiatría, medicina y psicología. Gratis, sin instalación y disponible offline.",
+        "inLanguage": "es",
+        "applicationCategory": "GameApplication",
+        "genre": ["Party game", "Juego de deducción social", "Juego educativo"],
+        "operatingSystem": "Web (cualquier navegador moderno)",
+        "playMode": "MultiPlayer",
+        "gamePlatform": "Web Browser",
+        "numberOfPlayers": {
+            "@type": "QuantitativeValue",
+            "minValue": 3
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "pataforista"
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -135,12 +198,12 @@
                         <label>Modo de Juego</label>
                         <div class="mode-toggle" style="display: flex; gap: 0.5rem; flex-direction: column;">
                             <label class="radio-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                                <input type="radio" name="game-mode" value="guided" checked style="width: auto;">
-                                <span>Modo Guiado (Turnos y App)</span>
+                                <input type="radio" name="game-mode" value="free" checked style="width: auto;">
+                                <span>Modo Libre (Debate Verbal Puro)</span>
                             </label>
                             <label class="radio-label" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
-                                <input type="radio" name="game-mode" value="free" style="width: auto;">
-                                <span>Modo Libre (Debate Verbal Puro)</span>
+                                <input type="radio" name="game-mode" value="guided" style="width: auto;">
+                                <span>Modo Guiado (Turnos y App)</span>
                             </label>
                         </div>
                     </div>

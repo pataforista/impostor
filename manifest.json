@@ -1,8 +1,13 @@
 {
-  "name": "Impostor Word Engine",
+  "id": "/impostor/",
+  "name": "Impostor: Edición Médica y Psiquiatría",
   "short_name": "Impostor",
-  "description": "Juego de deducción médica. ¡Descubre al impostor!",
+  "description": "Juego del impostor para grupos y fiestas. Descubre al infiltrado entre especialistas con cartas de psiquiatría, medicina y psicología.",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["games", "education", "entertainment"],
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0d1117",
   "theme_color": "#c678ff",
@@ -11,7 +16,8 @@
     {
       "src": "favicon.svg",
       "type": "image/svg+xml",
-      "sizes": "any"
+      "sizes": "any",
+      "purpose": "any maskable"
     }
   ]
 }
