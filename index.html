@@ -322,6 +322,28 @@
             </div>
         </section>
 
+        <!-- Moderator Screen -->
+        <section id="moderator-screen" class="screen">
+            <div class="glass-container text-center">
+                <h2>Panel del Moderador</h2>
+                <p class="subtitle" style="margin-top: 1rem;">Caso a Debatir / Categoría</p>
+                <h3 id="moderator-category" style="color: var(--secondary); font-size: 1.2rem; margin-bottom: 0.5rem;">---</h3>
+                <p class="subtitle">Palabra Secreta:</p>
+                <h1 id="free-secret-word" style="font-size: 2.2rem; background: linear-gradient(to bottom, #fff, var(--primary)); -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem;">---</h1>
+                
+                <div class="divider" style="height: 1px; background: var(--glass-border); margin: 1.5rem 0;"></div>
+                
+                <p class="subtitle" style="margin-bottom: 1rem;">Roles Asignados (Mantén el móvil en secreto):</p>
+                <ul id="free-roles-list" class="styled-list" style="text-align: left; max-height: 250px; overflow-y: auto; padding: 0.5rem; margin-bottom: 2rem;">
+                    <!-- Populated by JS -->
+                </ul>
+                
+                <button id="finish-free-game" class="primary-btn">
+                    <i data-lucide="eye" style="margin-right: 8px;"></i> Revelar Resultados
+                </button>
+            </div>
+        </section>
+
         <!-- End Screen -->
         <section id="end-screen" class="screen">
             <div class="glass-container text-center">

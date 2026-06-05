@@ -1,12 +1,28 @@
 import { ImpostorWordEngine } from "./impostor-word-engine.js";
 import { RetroAudioEngine } from "./audio-engine.js";
 
+// Helper to prevent XSS by escaping HTML special characters
+function escapeHTML(str) {
+    if (typeof str !== 'string') return '';
+    return str.replace(/[&<>"']/g, function(m) {
+        switch (m) {
+            case '&': return '&amp;';
+            case '<': return '&lt;';
+            case '>': return '&gt;';
+            case '"': return '&quot;';
+            case "'": return '&#039;';
+            default: return m;
+        }
+    });
+}
+
 // DOM Elements
 const screens = {
     intro: document.getElementById('intro-screen'),
     setup: document.getElementById('setup-screen'),
     distribution: document.getElementById('distribution-screen'),
     game: document.getElementById('game-screen'),
+    moderator: document.getElementById('moderator-screen'),
     end: document.getElementById('end-screen')
 };
 
@@ -15,6 +31,12 @@ const themeSelector = document.getElementById('theme-selector');
 const toggleSoundBtn = document.getElementById('toggle-sound');
 const shiftStatus = document.getElementById('shift-status');
 const goToSetupBtn = document.getElementById('go-to-setup-btn');
+
+// Moderator Elements
+const moderatorCategory = document.getElementById('moderator-category');
+const freeSecretWord = document.getElementById('free-secret-word');
+const freeRolesList = document.getElementById('free-roles-list');
+const finishFreeGameBtn = document.getElementById('finish-free-game');
 
 const categoryPillsContainer = document.getElementById('category-pills');
 const selectAllBtn = document.getElementById('select-all-cats');
@@ -97,8 +119,8 @@ function updateBackground(category) {
         bgOverlay.style.opacity = '0.3';
     };
     img.onerror = () => {
-        bgOverlay.style.backgroundImage = 'none';
-        bgOverlay.style.opacity = '0';
+        bgOverlay.style.backgroundImage = 'radial-gradient(circle at 50% 50%, rgba(198, 120, 255, 0.15), transparent 80%)';
+        bgOverlay.style.opacity = '0.5';
     };
     img.src = path;
 }
@@ -153,9 +175,42 @@ document.querySelectorAll('.step-btn').forEach(btn => {
     });
 });
 
+function updateSoundIcon() {
+    const icon = toggleSoundBtn.querySelector('i');
+    if (icon) {
+        icon.setAttribute('data-lucide', audio.enabled ? 'volume-2' : 'volume-x');
+        lucide.createIcons();
+    }
+}
+
+function loadPreferences() {
+    // Theme
+    const savedTheme = localStorage.getItem('impostor-theme') || 'default';
+    themeSelector.value = savedTheme;
+    document.body.setAttribute('data-theme', savedTheme);
+
+    // Sound
+    const savedSound = localStorage.getItem('impostor-sound-enabled');
+    if (savedSound !== null) {
+        audio.enabled = savedSound === 'true';
+    } else {
+        audio.enabled = true; // default
+    }
+    updateSoundIcon();
+
+    // Game Mode
+    const savedMode = localStorage.getItem('impostor-game-mode') || 'free';
+    const modeRadio = document.querySelector(`input[name="game-mode"][value="${savedMode}"]`);
+    if (modeRadio) modeRadio.checked = true;
+}
+
 // 1. Load Dataset & Populate Categories
 async function init() {
+    loadPreferences();
     audio.init();
+    if(domainPillsContainer) domainPillsContainer.innerHTML = '<div class="loading-text">Cargando dominios...</div>';
+    if(categoryPillsContainer) categoryPillsContainer.innerHTML = '<div class="loading-text">Cargando categorías...</div>';
+
     try {
         const domains = [
             { file: 'impostor_deck_200_v1_1_normalizado.json', domain: 'Psiquiatría' },
@@ -188,6 +243,9 @@ async function init() {
         uniqueDomains.forEach(dom => {
             const pill = document.createElement('div');
             pill.className = 'category-pill active no-image';
+            pill.setAttribute('tabindex', '0');
+            pill.setAttribute('role', 'checkbox');
+            pill.setAttribute('aria-checked', 'true');
             const label = document.createElement('span');
             label.className = 'pill-label';
             label.textContent = dom;
@@ -195,9 +253,16 @@ async function init() {
             pill.dataset.domain = dom;
             pill.addEventListener('click', () => {
                 pill.classList.toggle('active');
+                pill.setAttribute('aria-checked', pill.classList.contains('active') ? 'true' : 'false');
                 triggerHaptic('light');
                 audio.play('click');
                 updateCategoryPills();
+            });
+            pill.addEventListener('keydown', (e) => {
+                if (e.key === ' ' || e.key === 'Enter') {
+                    e.preventDefault();
+                    pill.click();
+                }
             });
             if(domainPillsContainer) domainPillsContainer.appendChild(pill);
         });
@@ -218,6 +283,9 @@ function updateCategoryPills() {
     categories.forEach(cat => {
         const pill = document.createElement('div');
         pill.className = 'category-pill active'; 
+        pill.setAttribute('tabindex', '0');
+        pill.setAttribute('role', 'checkbox');
+        pill.setAttribute('aria-checked', 'true');
         const label = document.createElement('span');
         label.className = 'pill-label';
         label.textContent = cat;
@@ -225,10 +293,17 @@ function updateCategoryPills() {
         pill.dataset.category = cat;
         pill.addEventListener('click', () => {
             pill.classList.toggle('active');
+            pill.setAttribute('aria-checked', pill.classList.contains('active') ? 'true' : 'false');
             triggerHaptic('light');
             audio.play('click');
             if (pill.classList.contains('active')) {
                 updateBackground(cat);
+            }
+        });
+        pill.addEventListener('keydown', (e) => {
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                pill.click();
             }
         });
         pill.addEventListener('mouseenter', () => {
@@ -245,28 +320,38 @@ goToSetupBtn.addEventListener('click', () => {
 
 selectAllBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelectorAll('.category-pill').forEach(p => p.classList.add('active'));
+    document.querySelectorAll('.category-pill').forEach(p => {
+        p.classList.add('active');
+        p.setAttribute('aria-checked', 'true');
+    });
 });
 
 selectNoneBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.category-pill').forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-checked', 'false');
+    });
 });
 
 themeSelector.addEventListener('change', (e) => {
     document.body.setAttribute('data-theme', e.target.value);
     audio.play('click');
+    localStorage.setItem('impostor-theme', e.target.value);
 });
 
 toggleSoundBtn.addEventListener('click', () => {
     audio.toggle();
     audio.init();
-    // Update icon based on state
-    const icon = toggleSoundBtn.querySelector('i');
-    if (icon) {
-        icon.setAttribute('data-lucide', audio.enabled ? 'volume-2' : 'volume-x');
-        lucide.createIcons();
-    }
+    updateSoundIcon();
+    localStorage.setItem('impostor-sound-enabled', audio.enabled);
+});
+
+// Save mode on radio select change
+document.querySelectorAll('input[name="game-mode"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+        localStorage.setItem('impostor-game-mode', e.target.value);
+    });
 });
 
 // 2. Start Game Logic
@@ -275,6 +360,11 @@ startBtn.addEventListener('click', () => {
     shiftStatus.classList.remove('hidden');
     const playerNames = playerInput.value.split(',').map(n => n.trim()).filter(n => n);
     if (playerNames.length < 3) return alert("¡Atención! Se necesitan al menos 3 jugadores para una partida épica.");
+
+    const uniqueNames = new Set(playerNames);
+    if (uniqueNames.size !== playerNames.length) {
+        return alert("¡Atención! Todos los jugadores deben tener nombres únicos.");
+    }
 
     const players = playerNames.map((name, i) => ({ id: i.toString(), name }));
     const impostorCount = parseInt(impostorInput.value);
@@ -324,8 +414,38 @@ startBtn.addEventListener('click', () => {
         impostorCount
     });
 
-    startDistribution();
+    if (isFreeMode) {
+        startFreeMode();
+    } else {
+        startDistribution();
+    }
 });
+
+function startFreeMode() {
+    const state = engine.getState();
+    
+    if (moderatorCategory) {
+        moderatorCategory.textContent = state.secret.category || "General";
+    }
+    if (freeSecretWord) {
+        freeSecretWord.textContent = state.secret.word;
+    }
+    
+    if (freeRolesList) {
+        freeRolesList.innerHTML = state.players.map(p => {
+            const roleLabel = p.role === "IMPOSTOR" ? '<span class="impostor-text" style="font-weight: 800;">🤫 IMPOSTOR</span>' : `<span>🔍 ESPECIALISTA</span>`;
+            return `<li><span class="player-name">${escapeHTML(p.name)}</span><span>${roleLabel}</span></li>`;
+        }).join('');
+    }
+    
+    finishFreeGameBtn.onclick = () => {
+        triggerHaptic('heavy');
+        audio.play('success');
+        engine.endGame();
+    };
+    
+    switchScreen('moderator');
+}
 
 function startDistribution() {
     distributionIndex = 0;
@@ -367,9 +487,9 @@ readyToSeeBtn.addEventListener('click', () => {
             <p class="card-label">Identidad Clínica</p>
             <h3 class="card-role">ESPECIALISTA</h3>
             <p class="card-label">Área de Consulta</p>
-            <h3 class="card-role" style="font-size: 1.2rem; opacity: 0.8;">${card.category}</h3>
+            <h3 class="card-role" style="font-size: 1.2rem; opacity: 0.8;">${escapeHTML(card.category)}</h3>
             <p class="card-label">Caso a Debatir</p>
-            <h3 class="card-word">${card.word}</h3>
+            <h3 class="card-word">${escapeHTML(card.word)}</h3>
         `;
     }
 
@@ -423,6 +543,7 @@ function setupEngineListeners() {
                 triggerHaptic('heavy');
                 break;
             case "VOTE_CAST":
+                renderVoteUI(ev.state);
                 break;
             case "VOTE_REJECTED": {
                 // Show inline error instead of blocking alert
@@ -520,7 +641,7 @@ function renderClueList(state) {
     state.cluesThisRound.forEach(c => {
         const p = state.players.find(x => x.id === c.playerId);
         const li = document.createElement('li');
-        li.innerHTML = `<span class="player-name">${p.name}</span><span class="player-clue">${c.rawClue}</span>`;
+        li.innerHTML = `<span class="player-name">${escapeHTML(p.name)}</span><span class="player-clue">${escapeHTML(c.rawClue)}</span>`;
         clueList.appendChild(li);
     });
 }
@@ -528,26 +649,57 @@ function renderClueList(state) {
 function renderVoteUI(state) {
     if (!voteButtons) return;
     voteButtons.innerHTML = '';
+    
+    const votePromptText = document.querySelector('#vote-section .hint');
     const alivePlayers = state.players.filter(p => p.alive);
-    // Determine the correct voter: the current turn player
-    const currentVoterId = state.turnOrder
-        ? state.turnOrder[state.currentTurnIndex] || alivePlayers[0]?.id
-        : alivePlayers[0]?.id;
-    alivePlayers.forEach(p => {
-        const btn = document.createElement('button');
-        btn.className = 'vote-btn';
-        btn.textContent = p.name;
-        btn.onclick = () => {
-            engine.castVote(currentVoterId, p.id);
+    const votersWhoVoted = state.votesThisRound.map(v => v.voterId);
+    const remainingVoters = alivePlayers.filter(p => !votersWhoVoted.includes(p.id));
+
+    if (remainingVoters.length > 0) {
+        const currentVoter = remainingVoters[0];
+        if (votePromptText) {
+            votePromptText.innerHTML = `Voto de: <strong style="color: var(--primary); font-size: 1.2rem;">${escapeHTML(currentVoter.name)}</strong><br><span style="font-size: 0.9rem; opacity: 0.8;">Elige al infiltrado:</span>`;
+        }
+        if (skipVoteBtn) {
+            skipVoteBtn.classList.remove('hidden');
+            skipVoteBtn.onclick = () => {
+                if (confirm(`¿Estás seguro de que ${currentVoter.name} desea saltar su voto?`)) {
+                    audio.play('click');
+                    triggerHaptic('light');
+                    engine.castVote(currentVoter.id, "SKIP");
+                }
+            };
+        }
+
+        alivePlayers.forEach(p => {
+            const btn = document.createElement('button');
+            btn.className = 'vote-btn';
+            btn.textContent = p.name;
+            btn.onclick = () => {
+                audio.play('click');
+                triggerHaptic('light');
+                engine.castVote(currentVoter.id, p.id);
+            };
+            voteButtons.appendChild(btn);
+        });
+    } else {
+        if (votePromptText) {
+            votePromptText.textContent = "Todos los diagnósticos han votado.";
+        }
+        if (skipVoteBtn) {
+            skipVoteBtn.classList.add('hidden');
+        }
+
+        const resolveBtn = document.createElement('button');
+        resolveBtn.className = 'primary-btn';
+        resolveBtn.style.width = '100%';
+        resolveBtn.textContent = 'RESOLVER VOTACIÓN';
+        resolveBtn.onclick = () => {
+            audio.play('transition');
+            triggerHaptic('medium');
             engine.resolveVote();
         };
-        voteButtons.appendChild(btn);
-    });
-    if (skipVoteBtn) {
-        skipVoteBtn.onclick = () => {
-            engine.castVote(currentVoterId, "SKIP");
-            engine.resolveVote();
-        };
+        voteButtons.appendChild(resolveBtn);
     }
 }
 

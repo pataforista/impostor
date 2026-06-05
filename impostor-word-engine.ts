@@ -476,7 +476,7 @@ export class ImpostorWordEngine {
     }
   }
 
-  private endGame() {
+  endGame() {
     this.state.phase = "END";
     this.state.ended = true;
     this.emit({ type: "GAME_ENDED", winner: this.state.winner, state: this.getState() });
